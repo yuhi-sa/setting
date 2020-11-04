@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://wiki.monolith.naist.jp/user/kobayashi/setup -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>/user/kobayashi/setup - ISC Lab Wiki</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta name="apple-mobile-web-app-title" content="ISC Lab Wiki">
+
+  
+
+  <link rel="apple-touch-icon" sizes="57x57" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://wiki.monolith.naist.jp/images/icons/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://wiki.monolith.naist.jp/images/icons/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://wiki.monolith.naist.jp/images/icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://wiki.monolith.naist.jp/images/icons/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://wiki.monolith.naist.jp/images/icons/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#4f5467">
+<meta name="msapplication-TileImage" content="/images/icons/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#4f5467">
+
+  <!-- polyfills for IE11 -->
+<script>
+  var userAgent = window.navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+    var scriptElement = document.createElement('script');
+    scriptElement.src = '/js/ie11-polyfill.5535bdd63e370a16dbae.bundle.js';
+    var headElement = document.getElementsByTagName('head')[0];
+    headElement.appendChild(scriptElement);
+  }
+</script>
+
+
+  <script src="./pc_set_files/bootstrap.min.js"></script>
+<script src="./pc_set_files/highlight.min.js"></script>
+
+  
+    <!-- Mathjax -->
+<script type="text/x-mathjax-config;executed=true" async="">
+  MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/SVG"],
+    tex2jax: {
+      processEscapes: true
+    },
+    showMathMenu: false,
+    showMathMenuMSIE: false,
+    showProcessingMessages: false,
+    messageStyle: "none"
+  });
+</script>
+<script src="./pc_set_files/MathJax.js" async=""></script>
+
+  
+
+  
+
+
+  <script src="./pc_set_files/vendors.b2f19be4b5384ce59211.chunk.js" defer=""></script>
+  <script src="./pc_set_files/commons.324de87a64c010a66f8d.chunk.js" defer=""></script>
+  
+  <script src="./pc_set_files/plugin.de2e345bdc18ac0108bf.bundle.js" defer=""></script>
+  
+  
+    <script src="./pc_set_files/legacy.1a63b8303db0b9c4cd19.bundle.js" defer=""></script>
+  
+  
+    <script src="./pc_set_files/app.7a778b57d38c692882d0.bundle.js" defer=""></script>
+  
+
+  <!-- styles -->
+  
+  <script src="./pc_set_files/style-commons.5e190c6079dd4a3393cc.chunk.js"></script>
+  <link rel="stylesheet" href="./pc_set_files/style-commons.873090eb92fa088b85bb.css">
+  <link rel="stylesheet" href="./pc_set_files/style-app.873090eb92fa088b85bb.css">
+
+
+  
+    
+      
+      
+  <link rel="stylesheet" id="grw-theme-link" href="./pc_set_files/theme-default.873090eb92fa088b85bb.css">
+
+
+    
+  
+
+  <link rel="stylesheet" href="./pc_set_files/css">
+<link rel="stylesheet" href="./pc_set_files/css(1)">
+<link rel="stylesheet" href="./pc_set_files/font-awesome.min.css">
+<link rel="stylesheet" href="./pc_set_files/index.min.css">
+<link rel="stylesheet" href="./pc_set_files/simple-line-icons.min.css">
+<link rel="stylesheet" href="./pc_set_files/emojione.min.css">
+  <link rel="stylesheet" href="./pc_set_files/github.css">
+
+  
+  
+  <script src="./pc_set_files/highlightjs-line-numbers.min.js" async=""></script>
+  <script src="./pc_set_files/viewer.min.js" async=""></script>
+
+
+  <style>
+    
+  </style>
+<style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style><style type="text/css"></style><script type="text/javascript" src="./pc_set_files/MathJax(1).js"></script><style type="text/css">div.MathJax_SVG_Display { position: static; }</style><style type="text/css">div.mxTooltip {
+-webkit-box-shadow: 3px 3px 12px #C0C0C0;
+-moz-box-shadow: 3px 3px 12px #C0C0C0;
+box-shadow: 3px 3px 12px #C0C0C0;
+background: #FFFFCC;
+border-style: solid;
+border-width: 1px;
+border-color: black;
+font-family: Arial;
+font-size: 8pt;
+position: absolute;
+cursor: default;
+padding: 4px;
+color: black;}
+td.mxPopupMenuIcon div {
+width:16px;
+height:16px;}
+html div.mxPopupMenu {
+-webkit-box-shadow:2px 2px 3px #d5d5d5;
+-moz-box-shadow:2px 2px 3px #d5d5d5;
+box-shadow:2px 2px 3px #d5d5d5;
+_filter:progid:DXImageTransform.Microsoft.DropShadow(OffX=2, OffY=2, Color='#d0d0d0',Positive='true');
+background:white;
+position:absolute;
+border:3px solid #e7e7e7;
+padding:3px;}
+html table.mxPopupMenu {
+border-collapse:collapse;
+margin:0px;}
+html td.mxPopupMenuItem {
+padding:7px 30px 7px 30px;
+font-family:Helvetica Neue,Helvetica,Arial Unicode MS,Arial;
+font-size:10pt;}
+html td.mxPopupMenuIcon {
+background-color:white;
+padding:0px;}
+td.mxPopupMenuIcon .geIcon {
+padding:2px;
+padding-bottom:4px;
+margin:2px;
+border:1px solid transparent;
+opacity:0.5;
+_width:26px;
+_height:26px;}
+td.mxPopupMenuIcon .geIcon:hover {
+border:1px solid gray;
+border-radius:2px;
+opacity:1;}
+html tr.mxPopupMenuItemHover {
+background-color: #eeeeee;
+color: black;}
+table.mxPopupMenu hr {
+color:#cccccc;
+background-color:#cccccc;
+border:none;
+height:1px;}
+table.mxPopupMenu tr {	font-size:4pt;}
+.geDialog { font-family:Helvetica Neue,Helvetica,Arial Unicode MS,Arial;
+font-size:10pt;
+border:none;
+margin:0px;}
+.geDialog {	position:absolute;	background:white;	overflow:hidden;	padding:30px;	border:1px solid #acacac;	-webkit-box-shadow:0px 0px 2px 2px #d5d5d5;	-moz-box-shadow:0px 0px 2px 2px #d5d5d5;	box-shadow:0px 0px 2px 2px #d5d5d5;	_filter:progid:DXImageTransform.Microsoft.DropShadow(OffX=2, OffY=2, Color='#d5d5d5', Positive='true');	z-index: 2;}.geDialogClose {	position:absolute;	width:9px;	height:9px;	opacity:0.5;	cursor:pointer;	_filter:alpha(opacity=50);}.geDialogClose:hover {	opacity:1;}.geDialogTitle {	box-sizing:border-box;	white-space:nowrap;	background:rgb(229, 229, 229);	border-bottom:1px solid rgb(192, 192, 192);	font-size:15px;	font-weight:bold;	text-align:center;	color:rgb(35, 86, 149);}.geDialogFooter {	background:whiteSmoke;	white-space:nowrap;	text-align:right;	box-sizing:border-box;	border-top:1px solid #e5e5e5;	color:darkGray;}
+.geBtn {	background-color: #f5f5f5;	border-radius: 2px;	border: 1px solid #d8d8d8;	color: #333;	cursor: default;	font-size: 11px;	font-weight: bold;	height: 29px;	line-height: 27px;	margin: 0 0 0 8px;	min-width: 72px;	outline: 0;	padding: 0 8px;	cursor: pointer;}.geBtn:hover, .geBtn:focus {	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);	border: 1px solid #c6c6c6;	background-color: #f8f8f8;	background-image: linear-gradient(#f8f8f8 0px,#f1f1f1 100%);	color: #111;}.geBtn:disabled {	opacity: .5;}.gePrimaryBtn {	background-color: #4d90fe;	background-image: linear-gradient(#4d90fe 0px,#4787ed 100%);	border: 1px solid #3079ed;	color: #fff;}.gePrimaryBtn:hover, .gePrimaryBtn:focus {	background-color: #357ae8;	background-image: linear-gradient(#4d90fe 0px,#357ae8 100%);	border: 1px solid #2f5bb7;	color: #fff;}.gePrimaryBtn:disabled {	opacity: .5;}</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+
+
+
+<body class="main-container content-wrapper growi" data-is-admin="false" data-plugin-enabled="true" data-csrftoken="anmPnTfO-Bymi3W623r462Mvr8_K-j3AFw8A" data-current-username="yuhi-sa" data-userlang="ja"><div id="MathJax_Message" style="display: none;"></div>
+
+<div id="wrapper">
+  <!-- Navigation -->
+  
+  <nav class="navbar navbar-default navbar-static-top mb-0">
+    <div class="navbar-header">
+      <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="ti-menu"></i>
+      </a>
+      <div class="top-left-part">
+        <a class="logo" href="http://wiki.monolith.naist.jp/">
+          <b>
+            <div class="logo-mark"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 226.44 196.11">
+  <polygon class="group2" points="56.61 196.11 169.83 196.11 226.44 98.06 188.7 98.06 150.96 163.43 75.48 163.43 56.61 196.11"></polygon>
+  <polygon class="group1" points="75.48 98.05 94.35 65.37 150.96 65.38 207.57 65.37 207.57 65.38 226.44 98.06 169.83 98.06 113.22 98.06 94.39 130.66 94.3 130.66 84.92 114.4 75.48 98.05"></polygon>
+  <polygon class="group1" points="0 98.06 56.6 0 113.22 0.01 169.83 0.01 169.83 0.01 188.69 32.68 132.09 32.69 75.47 32.69 18.86 130.74 0 98.06"></polygon>
+  <polygon class="group1" points="75.48 163.43 56.61 130.74 37.71 163.46 47.15 179.81 56.54 196.07 56.63 196.07 75.48 163.43"></polygon>
+</svg>
+</div>
+          </b>
+          <span class="hidden-xs" style="color: black">
+            
+            
+            <span class="logo-text">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="33" font-size="22">
+                  ISC Lab Wiki
+                </text>
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <ul class="nav navbar-top-links navbar-left hidden-xs">
+        <li>
+          <a class="open-close hidden-xs waves-effect waves-light">
+            <i class="ti-menu"></i>
+          </a>
+        </li>
+        
+        <li>
+          
+          <div class="navbar-form navbar-left search-top" role="search" id="search-top"><div class="form-group"><span class="input-group"><span class="btn-group-dropdown-scope input-group-btn"><div class="dropdown btn-group"><button id="dbScope" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">All pages <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="dbScope"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">All pages</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">この階層下の子ページのみ</a></li></ul></div></span><div class="search-typeahead"><div class="rbt clearfix open" tabindex="-1" style="position: relative;"><div class="rbt-input-hint-container" style="position: relative;"><input autocomplete="off" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" placeholder="Search ..." role="combobox" type="text" class="rbt-input-main form-control rbt-input " value=""><div class="rbt-input-hint" style="left: 0px; pointer-events: none; position: absolute; top: 0px; display: inline-block;"><input aria-hidden="true" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.35); box-sizing: content-box; width: 3px; border-style: none; border-width: 0px; font-size: 14px; line-height: 20px; margin: 0px; padding: 7px 12px;"><div style="height: 0px; left: 0px; overflow: scroll; position: absolute; top: 0px; visibility: hidden; white-space: pre; font-size: 14px; font-family: Lato, -apple-system, system-ui, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><div aria-atomic="true" aria-live="polite" class="sr-only rbt-sr-status" role="status">0 selections</div></div><span></span></div><span class="btn-group-submit-search input-group-btn"><button type="button" class="btn btn-link"><i class="icon-magnifier"></i></button></span></span></div></div>
+          
+        </li>
+      </ul>
+
+      <ul class="nav navbar-top-links navbar-right pull-right">
+        
+
+        
+        <li class="nav-item-create-page">
+          <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#" data-target="#create-page" data-toggle="modal" class="create-page">
+            <i class="icon-pencil"></i><span>作成</span>
+          </a>
+        </li>
+        <li class="nav-item-help">
+          <a href="https://docs.growi.org/" target="_blank">
+            <i class="icon-question"></i><span>ヘルプ</span><span class="text-muted small"><i class="icon-share-alt"></i></span>
+          </a>
+        </li>
+        <li id="personal-dropdown" class="dropdown"><a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown"><span><img src="./pc_set_files/user.svg" alt="yuhi-sa" class="img-circle picture"></span>&nbsp;佐伯雄飛</a><ul class="dropdown-menu dropdown-menu-right"><li><a href="http://wiki.monolith.naist.jp/user/yuhi-sa"><i class="icon-fw icon-home"></i>ホーム</a></li><li><a href="http://wiki.monolith.naist.jp/me"><i class="icon-fw icon-wrench"></i>ユーザー設定</a></li><li role="separator" class="divider"></li><li><a href="http://wiki.monolith.naist.jp/user/yuhi-sa#user-draft-list"><i class="icon-fw icon-docs"></i>下書き一覧</a></li><li><a href="http://wiki.monolith.naist.jp/trash"><i class="icon-fw icon-trash"></i>削除済みページ</a></li><li role="separator" class="divider"></li><li><a role="button"><i class="icon-fw icon-power"></i>ログアウト</a></li></ul></li>
+        
+        
+        <li class="confidential"><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">Internal</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-header -->
+  </nav>
+  <div class="modal create-page" id="create-page">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-title">新規ページ</div>
+      </div>
+
+      <div class="modal-body">
+
+        <form class="row form-horizontal" id="create-page-today" role="form">
+          <fieldset class="col-xs-12">
+            <legend>今日の◯◯を作成</legend>
+            <div class="d-flex create-page-input-container">
+              <div class="create-page-input-row d-flex align-items-center">
+                <span class="page-today-prefix">/user/yuhi-sa/</span>
+                <input type="text" data-prefix="/user/yuhi-sa/" class="page-today-input1 form-control text-center" value="メモ" id="" name="">
+                <span class="page-today-suffix">/2020/11/04/</span>
+                <input type="text" data-prefix="/2020/11/04/" class="page-today-input2 form-control" id="page-today-input2" name="" placeholder="ページ名を入力(空欄OK)">
+              </div>
+              <div class="create-page-button-container">
+                <button type="submit" class="fcbtn btn btn-outline btn-rounded btn-primary btn-1b"><i class="icon-fw icon-doc"></i>作成</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <form class="row form-horizontal m-t-15" id="create-page-under-tree" role="form">
+          <fieldset class="col-xs-12">
+            <legend>ページを以下に作成</legend>
+            <div class="d-flex create-page-input-container">
+              <div class="create-page-input-row d-flex align-items-center">
+                
+                <div id="create-page-name-input" class="page-name-input"><div><div class="search-typeahead"><div class="rbt clearfix open" tabindex="-1" style="position: relative;"><div class="rbt-input-hint-container" style="position: relative;"><input autocomplete="off" name="new_path" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" role="combobox" type="text" class="rbt-input-main form-control rbt-input " value="/user/kobayashi/setup/"><div class="rbt-input-hint" style="left: 0px; pointer-events: none; position: absolute; top: 0px; display: inline-block;"><input aria-hidden="true" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.35); box-sizing: content-box; width: 3px; border-style: solid; border-width: 1px; font-size: 14px; line-height: 20px; margin: 0px; padding: 7px 12px;"><div style="height: 0px; left: 0px; overflow: scroll; position: absolute; top: 0px; visibility: hidden; white-space: pre; font-size: 14px; font-family: Lato, -apple-system, system-ui, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><div aria-atomic="true" aria-live="polite" class="sr-only rbt-sr-status" role="status">1 selection</div></div><span></span></div></div></div>
+                
+              </div>
+              <div class="create-page-button-container">
+                <button type="submit" class="fcbtn btn btn-outline btn-rounded btn-primary btn-1b"><i class="icon-fw icon-doc"></i>作成</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        
+        <div id="template-form" class="row form-horizontal m-t-15">
+          <fieldset class="col-xs-12">
+            <legend><code><small>/user/kobayashi/setup/</small></code><br>にテンプレートページを作成</legend>
+            <div class="d-flex create-page-input-container">
+              <div class="create-page-input-row d-flex align-items-center">
+                <div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="template-type" title="テンプレートタイプを選択してください"><span class="filter-option pull-left">テンプレートタイプを選択してください</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">同一階層テンプレート(_template)<small class="text-muted">- テンプレートページが存在する階層にのみ適用されます</small></span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">下位層テンプレート(__template)<small class="text-muted">- テンプレートページが存在する下位層のすべてのページに適用されます</small></span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="template-type" class="form-control selectpicker" title="テンプレートタイプを選択してください" tabindex="-98"><option class="bs-title-option" value="">テンプレートタイプを選択してください</option>
+                  <option value="children" data-subtext="- テンプレートページが存在する階層にのみ適用されます">同一階層テンプレート(_template)</option>
+                  <option value="decentants" data-subtext="- テンプレートページが存在する下位層のすべてのページに適用されます">下位層テンプレート(__template)</option>
+                </select></div>
+              </div>
+              <div class="create-page-button-container">
+                <a id="link-to-template" href="http://wiki.monolith.naist.jp/user/kobayashi/setup" class="fcbtn btn btn-outline btn-rounded btn-primary btn-1b disabled">
+                  <i class="icon-fw icon-doc"></i>
+                  <span id="create-template-button-link">編集</span>
+                </a>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <script>
+          $('#template-type').on('change', function() {
+            // enable button
+            $('#link-to-template').removeClass('disabled');
+
+            // modify href
+            const value = $(this).val();
+            const pageName = (value === 'children') ? '_template' : '__template';
+            const parentPath = '/user/kobayashi/setup/';
+            const link = parentPath + pageName + '#edit-form';
+            $('#link-to-template').attr('href', link);
+          });
+        </script>
+
+      </div><!-- /.modal-body -->
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+   
+
+  
+
+  
+
+  
+  <!-- Left navbar-header -->
+  <div class="navbar-default sidebar hidden-print" role="navigation" style="overflow: visible;">
+    <div class="slimScrollDiv" style="position: relative; overflow: visible; width: auto; height: 100%;"><div class="sidebar-nav navbar-collapse slimscrollsidebar" style="overflow: visible hidden; width: auto; height: 100%;">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+          
+          <div class="search-sidebar" role="search" id="search-sidebar"><div class="form-group"><span class="input-group"><span class="btn-group-dropdown-scope input-group-btn"><div class="dropdown btn-group"><button id="dbScope" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">All pages <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="dbScope"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">All pages</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">この階層下の子ページのみ</a></li></ul></div></span><div class="search-typeahead"><div class="rbt clearfix open" tabindex="-1" style="position: relative;"><div class="rbt-input-hint-container" style="position: relative;"><input autocomplete="off" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" placeholder="Search ..." role="combobox" type="text" class="rbt-input-main form-control rbt-input " value=""><div class="rbt-input-hint" style="left: 0px; pointer-events: none; position: absolute; top: 0px; display: inline-block;"><input aria-hidden="true" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.35); box-sizing: content-box; width: 3px; border-style: none; border-width: 0px; font-size: 14px; line-height: 20px; margin: 0px; padding: 7px 12px;"><div style="height: 0px; left: 0px; overflow: scroll; position: absolute; top: 0px; visibility: hidden; white-space: pre; font-size: 14px; font-family: Lato, -apple-system, system-ui, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><div aria-atomic="true" aria-live="polite" class="sr-only rbt-sr-status" role="status">0 selections</div></div><span></span></div><span class="btn-group-submit-search input-group-btn"><button type="button" class="btn btn-link"><i class="icon-magnifier"></i></button></span></span></div></div>
+          
+        </li>
+
+        <li class="tbd"><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">(TBD) Create /Sidebar</a></li>
+      </ul>
+    </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 0px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 0px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+  </div>
+  <!-- Left navbar-header end -->
+  
+
+  <!-- Page Content -->
+  <div id="page-wrapper" style="min-height: 580px;">
+    
+<div class="container-fluid">
+
+  <div class="row bg-title hidden-print" style="min-height: 73px;">
+    <div class="col-xs-12 header-container">
+      
+  <div class="header-wrap">
+  <header id="page-header" class="affix-top">
+    <div class="d-flex align-items-center">
+      <div class="title-logo-container hidden-xs hidden-sm">
+        <a class="logo" href="http://wiki.monolith.naist.jp/">
+          <div class="logo-mark"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 226.44 196.11">
+  <polygon class="group2" points="56.61 196.11 169.83 196.11 226.44 98.06 188.7 98.06 150.96 163.43 75.48 163.43 56.61 196.11"></polygon>
+  <polygon class="group1" points="75.48 98.05 94.35 65.37 150.96 65.38 207.57 65.37 207.57 65.38 226.44 98.06 169.83 98.06 113.22 98.06 94.39 130.66 94.3 130.66 84.92 114.4 75.48 98.05"></polygon>
+  <polygon class="group1" points="0 98.06 56.6 0 113.22 0.01 169.83 0.01 169.83 0.01 188.69 32.68 132.09 32.69 75.47 32.69 18.86 130.74 0 98.06"></polygon>
+  <polygon class="group1" points="75.48 163.43 56.61 130.74 37.71 163.46 47.15 179.81 56.54 196.07 56.63 196.07 75.48 163.43"></polygon>
+</svg>
+</div>
+        </a>
+      </div>
+      <div class="title-container">
+        <h1 class="title" id="revision-path"><span class="d-flex align-items-center"><span class="path-segment"><a href="http://wiki.monolith.naist.jp/"><i class="icon-home"></i><span class="separator" style="margin-left: 0.2em; margin-right: 0.2em;">/</span></a></span><span class="path-segment"><a href="http://wiki.monolith.naist.jp/user">user</a></span><span class="separator" style="margin-left: 0.2em; margin-right: 0.2em;"><span>/</span></span><span class="path-segment"><a href="http://wiki.monolith.naist.jp/user/kobayashi">kobayashi</a></span><span class="separator" style="margin-left: 0.2em; margin-right: 0.2em;"><span>/</span></span><span class="path-segment"><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup">setup</a></span><span class="separator" style="margin-left: 0.2em; margin-right: 0.2em;"><span></span></span><div class="dropdown btn-group"><button data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="" id="copyPagePathDropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="btn-copy dropdown-toggle btn btn-default" style="margin-left: 0.5em; padding: 0px 2px;" data-original-title="copied!"><i class="ti-clipboard"></i> <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="copyPagePathDropdown"><h5 class="ml-3 my-0 text-muted">クリップボードにコピー</h5><li role="separator" class="divider"></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><div class="d-inline-flex flex-column"><h6 class="mt-1 mb-2"><strong>ページ名</strong></h6><span class="small">/user/kobayashi/setup</span></div></a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><div class="d-inline-flex flex-column"><h6 class="mt-1 mb-2"><strong>パーマリンク</strong></h6><span class="small">http://wiki.monolith.naist.jp/5e8579b2561e55005cfb33c1</span></div></a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><div class="d-inline-flex flex-column"><h6 class="mt-1 mb-2"><strong>ページ名とパーマリンク</strong></h6><span class="small mb-1">/user/kobayashi/setup</span><br><span class="small">http://wiki.monolith.naist.jp/5e8579b2561e55005cfb33c1</span></div></a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><div class="d-inline-flex flex-column"><h6 class="mt-1 mb-2"><strong>マークダウン形式のリンク</strong></h6><span class="small">[/user/kobayashi/setup](http://wiki.monolith.naist.jp/5e8579b2561e55005cfb33c1)</span></div></a></li></ul></div><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" class="btn btn-default btn-edit" style="margin-left: 0.5em; padding: 0px 2px;"><i class="icon-note"></i></a></span></h1>
+        
+          <div id="tag-label"><div class="tag-viewer existed-page"><a class="btn btn-link btn-edit-tags no-tags p-0">タグを付ける <i class="manage-tags ml-2 icon-plus"></i></a></div></div>
+        
+      </div>
+      
+      
+  <div>
+    
+      
+
+  <span id="like-button" data-liked="false"><button type="button" href="#" title="Like" class="btn-like btn btn-default btn-circle btn-outline  btn-md"><i class="icon-like"></i></button></span>
+
+
+    
+  </div>
+  <div class="m-l-5">
+    
+      
+
+  <span id="bookmark-button"><button type="button" href="#" title="Bookmark" class="btn-bookmark btn btn-default btn-circle btn-outline  btn-md"><i class="icon-star"></i></button></span>
+
+
+    
+  </div>
+
+
+
+      <ul class="authors hidden-sm hidden-xs text-nowrap">
+        <li>
+          <div class="d-flex align-items-center not-affix">
+            <a class="m-r-5" href="http://wiki.monolith.naist.jp/user/kobayashi" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
+              <img src="./pc_set_files/user.svg" class="picture img-circle">
+            </a>
+            <div>
+              <div>Created by <a href="http://wiki.monolith.naist.jp/user/kobayashi"></a></div>
+              <div class="text-muted">2020/04/02 14:35:46</div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center only-affix">
+            <a class="m-r-5" href="http://wiki.monolith.naist.jp/user/kobayashi" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
+              <img src="./pc_set_files/user.svg" class="picture picture-xs img-circle">
+            </a>
+            <div class="ml-auto">
+              <div>Created in <span class="text-muted">2020/04/02 14:35:46</span></div>
+            </div>
+          </div>
+        </li>
+        <li class="m-t-5">
+          <div class="d-flex align-items-center not-affix">
+            <a class="m-r-5" href="http://wiki.monolith.naist.jp/user/kobayashi" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
+              <img src="./pc_set_files/user.svg" class="picture img-circle">
+            </a>
+            <div>
+              <div>Updated by <a href="http://wiki.monolith.naist.jp/user/kobayashi"></a></div>
+              <div class="text-muted" "="">2020/09/02 16:57:59</div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center only-affix">
+            <a class="m-r-5" href="http://wiki.monolith.naist.jp/user/kobayashi" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
+              <img src="./pc_set_files/user.svg" class="picture picture-xs img-circle">
+            </a>
+            <div class="ml-auto">
+              <div>Updated in <span class="text-muted" "="">2020/09/02 16:57:59</span></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+
+      
+
+    </div>
+
+  </header>
+</div>
+
+
+    </div>
+  </div><!-- /.bg-title -->
+
+  <div class="row">
+    <div id="main" class="main m-t-15 col-md-12 grant-restricted ">
+      
+
+
+      
+  <div class="row">
+
+    <div class="col-lg-10 col-md-9">
+
+      
+<div id="content-main" class="content-main" data-path="/user/kobayashi/setup" data-current-user="5ec2578c9465af0052807d3a" data-page-id="5e8579b2561e55005cfb33c1" data-page-revision-id="5f4f5087a89ca700515f06d1" data-page-revision-created="1599033479.54" data-page-revision-id-hackmd-synced="" data-page-id-on-hackmd="" data-page-has-draft-on-hackmd="" data-page-is-seen="0" data-slack-channels="">
+
+
+  <div class="row row-alerts">
+  <div class="col-xs-12">
+    
+
+      <p class="alert alert-inverse alert-grant">
+      
+        <i class="icon-fw icon-link"></i><strong>Anyone with the link</strong> (Browsing of this page is restricted)
+      
+      </p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+  </div>
+</div>
+
+
+  
+    
+<ul class="nav nav-tabs hidden-print">
+
+  
+  <li class="nav-main-left-tab active">
+    <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#revision-body" data-toggle="tab">
+      <i class="icon-control-play"></i> View
+    </a>
+  </li>
+
+  
+  <li class="nav-main-left-tab nav-tab-edit">
+    <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" data-toggle="tab" class="edit-button">
+      <i class="icon-note"></i> 編集
+    </a>
+  </li>
+  
+  
+
+  
+  
+    
+    <li class="nav-main-right-tab dropdown pull-right">
+      <a role="button" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="icon-options-vertical"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#" data-target="#renamePage" data-toggle="modal"><i class="icon-fw icon-action-redo"></i> 移動/名前変更</a></li>
+        <li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#" data-target="#duplicatePage" data-toggle="modal"><i class="icon-fw icon-docs"></i> 複製</a></li>
+        <li class="divider"></li>
+        <li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#" data-target="#create-template" data-toggle="modal"><i class="icon-fw icon-magic-wand"></i> テンプレートページの作成/編集..</a></li>
+        
+        <li class="divider"></li>
+        <li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#" data-target="#deletePage" data-toggle="modal"><i class="icon-fw icon-fire text-danger"></i> 削除</a></li>
+        
+      </ul>
+    </li>
+    
+  
+
+  <li class="nav-main-right-tab pull-right">
+    <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#revision-history" data-toggle="tab">
+      <i class="icon-layers"></i><span class="hidden-xs"> 更新履歴</span>
+    </a>
+  </li>
+  
+    <li class="nav-main-right-tab pull-right">
+      <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup?presentation=1" class="toggle-presentation">
+        <i class="icon-film"></i><span class="hidden-xs"> プレゼンテーション</span>
+      </a>
+    </li>
+  
+
+</ul>
+
+
+
+
+
+  
+
+  <div class="tab-content">
+
+    
+      <script type="text/template" id="raw-text-original">&num; setup&NewLine;&NewLine;&num;&num; Ubuntu 16&period;04 pc &lpar;Feb 2020 updated&rpar;&NewLine;1&period; install ubuntu 16&period;04 with English edition&NewLine;    - I have live usb to install it&comma; so please ask me&period;&NewLine;1&period; update &lpar;several times&quest;&rpar;&NewLine;&grave;&grave;&grave;bash&NewLine;sudo apt update&NewLine;sudo apt upgrade&NewLine;&grave;&grave;&grave;&NewLine;1&period; install cuda if NVIDIA GPU is inserted&NewLine;    1&period; access &lsqb;here&rsqb;&lpar;https&colon;&sol;&sol;developer&period;nvidia&period;com&sol;cuda-downloads&rpar; and choose&NewLine;        1&period; Linux&NewLine;        1&period; x86&lowbar;64&NewLine;        1&period; Ubuntu&NewLine;        1&period; 16&period;04&NewLine;        1&period; deb&lsqb;network&rsqb;&NewLine;    1&period; install cuda from deb package&NewLine;    1&period; add paths related to cuda&NewLine;    &grave;&grave;&grave;&NewLine;    echo -e &quot;&bsol;n&num;&num; CUDA and cuDNN paths&quot;  &gt;&gt; ~&sol;&period;bashrc&NewLine;    echo &apos;export PATH&equals;&sol;usr&sol;local&sol;cuda&sol;bin&colon;&dollar;&lcub;PATH&rcub;&apos; &gt;&gt; ~&sol;&period;bashrc&NewLine;    echo &apos;export LD&lowbar;LIBRARY&lowbar;PATH&equals;&sol;usr&sol;local&sol;cuda&sol;lib64&colon;&dollar;&lcub;LD&lowbar;LIBRARY&lowbar;PATH&rcub;&apos; &gt;&gt; ~&sol;&period;bashrc&NewLine;    source ~&sol;&period;bashrc&NewLine;    &grave;&grave;&grave;&NewLine;    1&period; reboot and check &grave;nvidia-smi&grave;&NewLine;    1&period; install cuDNN&NewLine;        1&period; access &lsqb;here&rsqb;&lpar;https&colon;&sol;&sol;developer&period;nvidia&period;com&sol;cudnn&rpar;&NewLine;            1&period; Download cuDNN&NewLine;            1&period; Join now&NewLine;            1&period; I Agree to ~~~&NewLine;            1&period; download corresponding version&NewLine;                - cuDNN v&midast;&period;&midast;&period;&midast; Runtime Library for Ubuntu16&period;04 &lsqb;Deb&rsqb;&NewLine;                - cuDNN v&midast;&period;&midast;&period;&midast; Developer Library for Ubuntu16&period;04 &lsqb;Deb&rsqb;&NewLine;                - cuDNN v&midast;&period;&midast;&period;&midast; Code Samples and User Guide for Ubuntu16&period;04 &lsqb;Deb&rsqb;    &NewLine;        1&period; install them&NewLine;    &grave;&grave;&grave;bash&NewLine;    cd the directory where the deb package is downloaded&NewLine;    sudo dpkg -i libcudnn&midast;&lowbar;&midast;&plus;cuda&midast;&lowbar;amd64&period;deb&NewLine;    sudo dpkg -i libcudnn&midast;-dev&lowbar;&midast;&plus;cuda&midast;&lowbar;amd64&period;deb&NewLine;    sudo dpkg -i libcudnn&midast;-doc&lowbar;&midast;&plus;cuda&midast;&lowbar;amd64&period;deb&NewLine;    &grave;&grave;&grave;    &NewLine;    1&period; test samples&NewLine;    &grave;&grave;&grave;bash&NewLine;    cuda-install-samples-&midast;&period;sh &period;&NewLine;    cd NVIDIA&lowbar;CUDA-&midast;&lowbar;Samples&NewLine;    make -k&NewLine;    &num; there other samples&NewLine;    cd 2&lowbar;Graphics&sol;volumeRender&NewLine;    &period;&sol;volumeRender&NewLine;    &grave;&grave;&grave;&NewLine;1&period; install utilities&NewLine;&grave;&grave;&grave;bash&NewLine;sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev libpng-dev dvipng&NewLine;sudo apt install exfat-fuse exfat-utils&NewLine;sudo apt install mesa-utils&NewLine;sudo apt install terminator kazam vlc ffmpeg imagemagick&NewLine;&grave;&grave;&grave;&NewLine;To install shotcut&comma; please download latest app &lpar;portable ver&period;&rpar; from official page &lpar;see &lsqb;here&rsqb;&lpar;https&colon;&sol;&sol;shotcut&period;org&sol;download&sol;&rpar;&rpar;&comma; and extract it to somewhere&period;&NewLine;1&period; install git&NewLine;&grave;&grave;&grave;bash&NewLine;sudo apt install git libgnome-keyring-dev&NewLine;cd &sol;usr&sol;share&sol;doc&sol;git&sol;contrib&sol;credential&sol;gnome-keyring&sol;&NewLine;sudo make&NewLine;git config --global credential&period;helper &sol;usr&sol;share&sol;doc&sol;git&sol;contrib&sol;credential&sol;gnome-keyring&sol;git-credential-gnome-keyring&NewLine;git config --global push&period;default simple&NewLine;curl -s https&colon;&sol;&sol;packagecloud&period;io&sol;install&sol;repositories&sol;github&sol;git-lfs&sol;script&period;deb&period;sh &vert; sudo bash&NewLine;sudo apt-get install git-lfs&NewLine;&num; if this pc is your own pc&NewLine;git config --global user&period;name &quot;Account name of github or gitlab&quot;&NewLine;git config --global user&period;email &quot;Your mail address for registration&quot; &NewLine;&grave;&grave;&grave;&NewLine;1&period; install latex&NewLine;&grave;&grave;&grave;bash&NewLine;sudo apt install texlive-lang-cjk&NewLine;sudo apt install texlive-latex-extra&NewLine;sudo apt install ttf-mscorefonts-installer&NewLine;sudo fc-cache&NewLine;&grave;&grave;&grave;&NewLine;1&period; install ibus-mozc for Japanese&NewLine;&grave;&grave;&grave;bash&NewLine;sudo apt install ibus-mozc&NewLine;killall ibus-daemon&NewLine;ibus-daemon -d -x &amp;&NewLine;&grave;&grave;&grave;&NewLine;1&period; &midast;&midast;&lpar;Option&rpar;&midast;&midast; install ROS kinetic &lpar;see &lsqb;here&rsqb;&lpar;http&colon;&sol;&sol;wiki&period;ros&period;org&sol;kinetic&sol;Installation&sol;Ubuntu&rpar;&rpar;&NewLine;&grave;&grave;&grave;bash&NewLine;sudo sh -c &apos;echo &quot;deb http&colon;&sol;&sol;packages&period;ros&period;org&sol;ros&sol;ubuntu &dollar;&lpar;lsb&lowbar;release -sc&rpar; main&quot; &gt; &sol;etc&sol;apt&sol;sources&period;list&period;d&sol;ros-latest&period;list&apos;&NewLine;sudo apt-key adv --keyserver hkp&colon;&sol;&sol;ha&period;pool&period;sks-keyservers&period;net&colon;80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116&NewLine;sudo apt update&NewLine;sudo apt-get install ros-kinetic-desktop-full&NewLine;sudo rosdep init&NewLine;rosdep update&NewLine;echo &quot;source &sol;opt&sol;ros&sol;kinetic&sol;setup&period;bash&quot; &gt;&gt; ~&sol;&period;bashrc&NewLine;source ~&sol;&period;bashrc&NewLine;sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential python-pip&NewLine;&grave;&grave;&grave;&NewLine;1&period; &midast;&midast;&lpar;Option&rpar;&midast;&midast; install google remote desktop&NewLine;    1&period; install google chrome&NewLine;    2&period; access https&colon;&sol;&sol;remotedesktop&period;google&period;com&sol;&NewLine;    3&period; try&excl;&NewLine;    4&period; login to your google account&NewLine;    1&period; open chrome remote desktop and enable remote access with setting your PIN&NewLine;If you installed this using deb package&comma; and if only wallpaper when login&comma; please try &lsqb;chrome&lowbar;remote&lowbar;ubuntu&period;bash&rsqb;&lpar;&sol;attachment&sol;5ea69048561e55005cfb3402&rpar;&period;&NewLine;&NewLine;When using terminator&comma; &NewLine;1&period; Open preferences&NewLine;1&period; Profiles -&gt; Scrolling&NewLine;1&period; Check infinite scrollback&NewLine;And to enable color setting&comma;&NewLine;1&period; Open ~&sol;&period;bashrc&NewLine;1&period; Search force&lowbar;color&lowbar;prompt&equals;yes&NewLine;1&period; Uncomment it&NewLine;&NewLine;For auto mounting second HDD&comma;&NewLine;1&period; Open Disks&NewLine;1&period; Select target HDD&NewLine;1&period; Click settings &lpar;gears icon&rpar; and Edit mount options&NewLine;1&period; ON Automatic Mount Options&NewLine;&NewLine;&num;&num; Python &lpar;April 2020 updated&rpar;&NewLine;&NewLine;&num;&num;&num; for ubuntu&NewLine;&NewLine;&grave;&grave;&grave;bash&NewLine;&num; anyenv for pyenv&NewLine;git clone https&colon;&sol;&sol;github&period;com&sol;riywo&sol;anyenv ~&sol;&period;anyenv&NewLine;echo &apos;export PATH&equals;&quot;&dollar;HOME&sol;&period;anyenv&sol;bin&colon;&dollar;PATH&quot;&apos; &gt;&gt; ~&sol;&period;bashrc&NewLine;echo &apos;eval &quot;&dollar;&lpar;anyenv init -&rpar;&quot;&apos; &gt;&gt; ~&sol;&period;bashrc&NewLine;exec &dollar;SHELL -l&NewLine;anyenv install --init&NewLine;git clone https&colon;&sol;&sol;github&period;com&sol;znz&sol;anyenv-update&period;git ~&sol;&period;anyenv&sol;plugins&sol;anyenv-update&NewLine;anyenv install pyenv&NewLine;anyenv update&NewLine;&NewLine;&num; packages for python2 &lpar;mainly for ROS&comma; so if ros is not used in your pc&comma; please ignore&rpar;&NewLine;&num; the latest numpy is only for python3&comma; so this process would fail&NewLine;&num; pip install cython numba numpy scipy pandas scikit-learn ruamel&period;yaml termcolor future fasteners pygame&NewLine;&num; pip install networkx&equals;&equals;2&period;2&NewLine;&num; pip install hdbscan&NewLine;&num; pip install gym &quot;gym&lsqb;box2d&rsqb;&quot;&NewLine;&num; pytorch from official site&NewLine;&num; pip install https&colon;&sol;&sol;~~~&period;whl&NewLine;&num; pip install torchvision&NewLine;&NewLine;&num; python3 &lpar;anaconda&rpar;&NewLine;pyenv install -l &vert; grep anaconda&NewLine;pyenv install anaconda&midast; &num; choose latest&NewLine;pyenv global anaconda&midast;&NewLine;&NewLine;&num; conda install conda&equals;&midast;&period;&midast;&period;&midast;&equals;py37&lowbar;0&NewLine;&num; conda init bash&NewLine;&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;Save the following yaml as env&period;yaml &lpar;version will be changed&comma; so please check here always&excl;&rpar;&NewLine;&NewLine;&grave;&grave;&grave;yaml&NewLine;name&colon; team&NewLine;channels&colon;&NewLine;  - conda-forge&NewLine;  - pytorch&NewLine;dependencies&colon;&NewLine;  - python&equals;3&period;7&NewLine;  - numpy&NewLine;  - scipy&NewLine;  - scikit-learn&NewLine;  - matplotlib&NewLine;  - seaborn&NewLine;  - pandas&NewLine;  - umap-learn&NewLine;  - hdbscan&NewLine;  - termcolor&NewLine;  - pyhamcrest&NewLine;  - ruamel&period;yaml&NewLine;  - pytorch&NewLine;  - torchvision&NewLine;  - cudatoolkit&equals;10&period;&NewLine;  - tensorboard&NewLine;  - psutil&NewLine;  - pip&NewLine;  - pip&colon;&NewLine;    - pygame&NewLine;    - &quot;gym&lsqb;box2d&rsqb;&quot;&NewLine;    - pybullet&NewLine;    - pyprind&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;After that&comma; in the directory with the above yaml&comma; &NewLine;&NewLine;&grave;&grave;&grave;bash&NewLine;conda env create -f env&period;yaml&NewLine;&num; if you use pyenv&NewLine;pyenv global anaconda&midast;&sol;envs&sol;team&NewLine;&num; if you don&apos;t use pyenv&NewLine;&num; conda init&NewLine;&num; echo -e &quot;&bsol;n&num;&num; conda default activation&quot; &gt;&gt; ~&sol;&period;bashrc&NewLine;&num; echo &quot;conda activate team&quot; &gt;&gt; ~&sol;&period;bashrc&NewLine;&num; source ~&sol;&period;bashrc&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;&num;&num;&num; for mac&NewLine;&NewLine;&grave;&grave;&grave;bash&NewLine;&num; anyenv for pyenv&NewLine;brew install anyenv&NewLine;echo &apos;eval &quot;&dollar;&lpar;anyenv init -&rpar;&quot;&apos; &gt;&gt; ~&sol;&period;bash&lowbar;profile&NewLine;exec &dollar;SHELL -l&NewLine;anyenv install --init&NewLine;git clone https&colon;&sol;&sol;github&period;com&sol;znz&sol;anyenv-update&period;git ~&sol;&period;anyenv&sol;plugins&sol;anyenv-update&NewLine;anyenv install pyenv&NewLine;anyenv update&NewLine;&NewLine;&num; python3 &lpar;anaconda&rpar;&NewLine;pyenv install -l &vert; grep anaconda&NewLine;pyenv install anaconda&midast; &num; choose latest&NewLine;pyenv global anaconda&midast;&NewLine;&NewLine;&num; conda update conda&equals;&midast;&period;&midast;&period;&midast;&equals;py37&lowbar;0&NewLine;&num; conda init bash&NewLine;&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;Save the following yaml as env&period;yaml &lpar;version will be changed&comma; so please check here always&excl;&rpar;&NewLine;&NewLine;&grave;&grave;&grave;yaml&NewLine;name&colon; team&NewLine;channels&colon;&NewLine;  - conda-forge&NewLine;  - pytorch&NewLine;dependencies&colon;&NewLine;  - python&equals;3&period;7&NewLine;  - numpy&NewLine;  - scipy&NewLine;  - scikit-learn&NewLine;  - matplotlib&NewLine;  - seaborn&NewLine;  - pandas&NewLine;  - umap-learn&NewLine;  - hdbscan&NewLine;  - termcolor&NewLine;  - pyhamcrest&NewLine;  - ruamel&period;yaml&NewLine;  - pytorch&NewLine;  - torchvision&NewLine;  - tensorboard&NewLine;  - psutil&NewLine;  - opencv&NewLine;  - ffmpeg&NewLine;  - imagemagick&NewLine;  - pip&NewLine;  - pip&colon;&NewLine;    - pygame&NewLine;    - &quot;gym&lsqb;box2d&rsqb;&quot;&NewLine;    - pybullet&NewLine;    - pyprind&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;After that&comma; in the directory with the above yaml&comma; &NewLine;&NewLine;&grave;&grave;&grave;bash&NewLine;conda env create -f env&period;yaml&NewLine;&num; if you use pyenv&NewLine;pyenv global anaconda&midast;&sol;envs&sol;team&NewLine;&num; if you don&apos;t use pyenv&NewLine;&num; conda init&NewLine;&num; echo -e &quot;&bsol;n&num;&num; conda default activation&quot; &gt;&gt; ~&sol;&period;bash&lowbar;profile&NewLine;&num; echo &quot;conda activate team&quot; &gt;&gt; ~&sol;&period;bash&lowbar;profile&NewLine;&num; source ~&sol;&period;bash&lowbar;profile&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;&num;&num;&num; tips&NewLine;&NewLine;&grave;pyenv global system&grave; is for changing back to system python2&period;&NewLine;&grave;pyenv local ~~~&grave; can set target python under currernt directory&comma; so&NewLine;&grave;&grave;&grave;bash&NewLine;cd your&lowbar;workspace&lowbar;for&lowbar;ros&NewLine;pyenv local system&NewLine;&grave;&grave;&grave;&NewLine;may be useful to change python only for ros&period;&NewLine;&NewLine;Or&comma; instead&comma; &NewLine;&grave;&grave;&grave;bash&NewLine;pyenv global system&NewLine;cd your&lowbar;workspace&lowbar;for&lowbar;python3&NewLine;pyenv local anaconda&midast;&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;If you want to activate your own environment&comma; you can use the following commands&period;&NewLine;&grave;&grave;&grave;bash&NewLine;conda activate hoge&NewLine;conda deactivate&NewLine;&grave;&grave;&grave;&NewLine;If you want to use both pyenv and conda activate&comma; I recommend to use pyenv mainly&period;&NewLine;&grave;&grave;&grave;bash&NewLine;pyenv local anaconda&midast;&sol;envs&sol;hoge&NewLine;&grave;&grave;&grave;&NewLine;can change the virtual environment in the current directory to hoge&period;&NewLine;If pyenv cannot switch the virtual environment&comma; you should deactivate&comma; then change the env&period;&NewLine;&NewLine;If &lpar;base&rpar; is always activated when launching new terminal&comma; you can ignore its activation by&NewLine;&grave;&grave;&grave;bash&NewLine;conda config --set auto&lowbar;activate&lowbar;base false&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;&num;&num; Atom editor &lpar;May 2020 updated&rpar;&NewLine;&NewLine;&num;&num;&num; for ubuntu&NewLine;&NewLine;&grave;&grave;&grave;bash&NewLine;&NewLine;&num; install atom&NewLine;wget -qO - https&colon;&sol;&sol;packagecloud&period;io&sol;AtomEditor&sol;atom&sol;gpgkey &vert; sudo apt-key add -&NewLine;sudo sh -c &apos;echo &quot;deb &lsqb;arch&equals;amd64&rsqb; https&colon;&sol;&sol;packagecloud&period;io&sol;AtomEditor&sol;atom&sol;any&sol; any main&quot; &gt; &sol;etc&sol;apt&sol;sources&period;list&period;d&sol;atom&period;list&apos;&NewLine;sudo apt update&NewLine;sudo apt install atom&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;&num;&num;&num; for mac&NewLine;&NewLine;1&period; download file from &lsqb;here&rsqb;&lpar;https&colon;&sol;&sol;atom&period;io&sol;&rpar;&NewLine;1&period; extract it and follow instructions&NewLine;&NewLine;&num;&num;&num; install packages&NewLine;&NewLine;To install packages&comma; save the following text as &grave;packages&period;txt&grave;&period;&NewLine;&grave;&grave;&grave;&NewLine;atom-runner&commat;2&period;7&period;1&NewLine;auto-encoding&commat;0&period;7&period;2&NewLine;convert-to-utf8&commat;0&period;2&period;4&NewLine;fancy-bracket-matcher&commat;2&period;1&period;0&NewLine;file-icons&commat;2&period;1&period;31&NewLine;git-plus&commat;8&period;6&period;2&NewLine;goto-definition&commat;1&period;3&period;4&NewLine;highlight-column&commat;0&period;5&period;4&NewLine;highlight-line&commat;0&period;12&period;0&NewLine;highlight-selected&commat;0&period;15&period;0&NewLine;language-latex&commat;1&period;2&period;0&NewLine;language-lua&commat;0&period;9&period;11&NewLine;latex&commat;0&period;50&period;2&NewLine;latexer&commat;0&period;3&period;0&NewLine;minimap&commat;4&period;29&period;9&NewLine;minimap-highlight-selected&commat;4&period;6&period;1&NewLine;multi-cursor&commat;2&period;1&period;5&NewLine;open-recent&commat;5&period;0&period;0&NewLine;pdf-view&commat;0&period;71&period;0&NewLine;platformio-ide-terminal&commat;2&period;9&period;1&NewLine;split-diff&commat;1&period;6&period;0&NewLine;symbols-tree-view&commat;0&period;14&period;0&NewLine;tablr&commat;1&period;8&period;3&NewLine;&grave;&grave;&grave;&NewLine;Then&comma;&NewLine;&grave;&grave;&grave;bash&NewLine;cd the directory where packages&period;txt was saved&NewLine;apm install --packages-file packages&period;txt&NewLine;&num; after installation&comma; you should check Auto Toggle in the config of symbols-tree-view&NewLine;&grave;&grave;&grave;&NewLine;&NewLine;There are many usefule shortcuts and plugins&comma; so please expoit them to improve your coding speed&excl;&NewLine;&lsqb;example&rsqb;&lpar;https&colon;&sol;&sol;www&period;sitepoint&period;com&sol;12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow&sol;&rpar;</script>
+
+      
+      <div class="tab-pane active" id="revision-body">
+        
+        <div id="page" class="m-t-15"><div class=""><div class="wiki "><h1 data-line="0" class="code-line revision-head" id="setup">setup <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#setup"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h1><h2 data-line="2" class="code-line revision-head" id="Ubuntu%2016.04%20pc%20(Feb%202020%20updated)">Ubuntu 16.04 pc (Feb 2020 updated) <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Ubuntu%2016.04%20pc%20(Feb%202020%20updated)"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h2><ol>
+<li data-line="3" class="code-line">install ubuntu 16.04 with English edition
+<ul>
+<li data-line="4" class="code-line">I have live usb to install it, so please ask me.</li>
+</ul>
+</li>
+<li data-line="5" class="code-line">update (several times?)</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt update
+sudo apt upgrade
+</code></pre>
+<ol>
+<li data-line="10" class="code-line">install cuda if NVIDIA GPU is inserted
+<ol>
+<li data-line="11" class="code-line">access <a href="https://developer.nvidia.com/cuda-downloads">here</a> and choose
+<ol>
+<li data-line="12" class="code-line">Linux</li>
+<li data-line="13" class="code-line">x86_64</li>
+<li data-line="14" class="code-line">Ubuntu</li>
+<li data-line="15" class="code-line">16.04</li>
+<li data-line="16" class="code-line">deb[network]</li>
+</ol>
+</li>
+<li data-line="17" class="code-line">install cuda from deb package</li>
+<li data-line="18" class="code-line">add paths related to cuda</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>echo -e "\n## CUDA and cuDNN paths"  &gt;&gt; ~/.bashrc
+echo 'export PATH=/usr/local/cuda/bin:${PATH}' &gt;&gt; ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre>
+<ol>
+<li data-line="25" class="code-line">reboot and check <code>nvidia-smi</code></li>
+<li data-line="26" class="code-line">install cuDNN
+<ol>
+<li data-line="27" class="code-line">access <a href="https://developer.nvidia.com/cudnn">here</a>
+<ol>
+<li data-line="28" class="code-line">Download cuDNN</li>
+<li data-line="29" class="code-line">Join now</li>
+<li data-line="30" class="code-line">I Agree to ~~~</li>
+<li data-line="31" class="code-line">download corresponding version
+<ul>
+<li data-line="32" class="code-line">cuDNN v*.<em>.</em> Runtime Library for Ubuntu16.04 [Deb]</li>
+<li data-line="33" class="code-line">cuDNN v*.<em>.</em> Developer Library for Ubuntu16.04 [Deb]</li>
+<li data-line="34" class="code-line">cuDNN v*.<em>.</em> Code Samples and User Guide for Ubuntu16.04 [Deb]</li>
+</ul>
+</li>
+</ol>
+</li>
+<li data-line="35" class="code-line">install them</li>
+</ol>
+</li>
+</ol>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> the directory <span class="hljs-built_in">where</span> the deb package is downloaded
+sudo dpkg -i libcudnn*_*+cuda*_amd64.deb
+sudo dpkg -i libcudnn*-dev_*+cuda*_amd64.deb
+sudo dpkg -i libcudnn*-doc_*+cuda*_amd64.deb
+</code></pre>
+<ol>
+<li data-line="42" class="code-line">test samples</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>cuda-install-samples-*.sh .
+<span class="hljs-built_in">cd</span> NVIDIA_CUDA-*_Samples
+make -k
+<span class="hljs-comment"># there other samples</span>
+<span class="hljs-built_in">cd</span> 2_Graphics/volumeRender
+./volumeRender
+</code></pre>
+</li>
+<li data-line="51" class="code-line">install utilities</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev libpng-dev dvipng
+sudo apt install exfat-fuse exfat-utils
+sudo apt install mesa-utils
+sudo apt install terminator kazam vlc ffmpeg imagemagick
+</code></pre>
+<p data-line="58" class="code-line">To install shotcut, please download latest app (portable ver.) from official page (see <a href="https://shotcut.org/download/">here</a>), and extract it to somewhere.</p>
+<ol>
+<li data-line="59" class="code-line">install git</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install git libgnome-keyring-dev
+<span class="hljs-built_in">cd</span> /usr/share/doc/git/contrib/credential/gnome-keyring/
+sudo make
+git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+git config --global push.default simple
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+<span class="hljs-comment"># if this pc is your own pc</span>
+git config --global user.name <span class="hljs-string">"Account name of github or gitlab"</span>
+git config --global user.email <span class="hljs-string">"Your mail address for registration"</span> 
+</code></pre>
+<ol>
+<li data-line="72" class="code-line">install latex</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install texlive-lang-cjk
+sudo apt install texlive-latex-extra
+sudo apt install ttf-mscorefonts-installer
+sudo <span class="hljs-built_in">fc</span>-cache
+</code></pre>
+<ol>
+<li data-line="79" class="code-line">install ibus-mozc for Japanese</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install ibus-mozc
+killall ibus-daemon
+ibus-daemon -d -x &amp;
+</code></pre>
+<ol>
+<li data-line="85" class="code-line"><strong>(Option)</strong> install ROS kinetic (see <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">here</a>)</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo sh -c <span class="hljs-string">'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/ros-latest.list'</span>
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt update
+sudo apt-get install ros-kinetic-desktop-full
+sudo rosdep init
+rosdep update
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"source /opt/ros/kinetic/setup.bash"</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">source</span> ~/.bashrc
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential python-pip
+</code></pre>
+<ol>
+<li data-line="97" class="code-line"><strong>(Option)</strong> install google remote desktop
+<ol>
+<li data-line="98" class="code-line">install google chrome</li>
+<li data-line="99" class="code-line">access <a href="https://remotedesktop.google.com/">https://remotedesktop.google.com/</a></li>
+<li data-line="100" class="code-line">try!</li>
+<li data-line="101" class="code-line">login to your google account</li>
+<li data-line="102" class="code-line">open chrome remote desktop and enable remote access with setting your PIN
+If you installed this using deb package, and if only wallpaper when login, please try <a href="http://wiki.monolith.naist.jp/attachment/5ea69048561e55005cfb3402">chrome_remote_ubuntu.bash</a>.</li>
+</ol>
+</li>
+</ol>
+<p data-line="105" class="code-line">When using terminator,</p>
+<ol>
+<li data-line="106" class="code-line">Open preferences</li>
+<li data-line="107" class="code-line">Profiles -&gt; Scrolling</li>
+<li data-line="108" class="code-line">Check infinite scrollback
+And to enable color setting,</li>
+<li data-line="110" class="code-line">Open ~/.bashrc</li>
+<li data-line="111" class="code-line">Search force_color_prompt=yes</li>
+<li data-line="112" class="code-line">Uncomment it</li>
+</ol>
+<p data-line="114" class="code-line">For auto mounting second HDD,</p>
+<ol>
+<li data-line="115" class="code-line">Open Disks</li>
+<li data-line="116" class="code-line">Select target HDD</li>
+<li data-line="117" class="code-line">Click settings (gears icon) and Edit mount options</li>
+<li data-line="118" class="code-line">ON Automatic Mount Options</li>
+</ol>
+<h2 data-line="120" class="code-line revision-head" id="Python%20(April%202020%20updated)">Python (April 2020 updated) <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Python%20(April%202020%20updated)"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h2><h3 data-line="122" class="code-line revision-head" id="for%20ubuntu">for ubuntu <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20ubuntu"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><pre class="hljs hljs-no-border"><code><span class="hljs-comment"># anyenv for pyenv</span>
+git <span class="hljs-built_in">clone</span> https://github.com/riywo/anyenv ~/.anyenv
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'export PATH="$HOME/.anyenv/bin:$PATH"'</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'eval "$(anyenv init -)"'</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">exec</span> <span class="hljs-variable">$SHELL</span> -l
+anyenv install --init
+git <span class="hljs-built_in">clone</span> https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+anyenv install pyenv
+anyenv update
+
+<span class="hljs-comment"># packages for python2 (mainly for ROS, so if ros is not used in your pc, please ignore)</span>
+<span class="hljs-comment"># the latest numpy is only for python3, so this process would fail</span>
+<span class="hljs-comment"># pip install cython numba numpy scipy pandas scikit-learn ruamel.yaml termcolor future fasteners pygame</span>
+<span class="hljs-comment"># pip install networkx==2.2</span>
+<span class="hljs-comment"># pip install hdbscan</span>
+<span class="hljs-comment"># pip install gym "gym[box2d]"</span>
+<span class="hljs-comment"># pytorch from official site</span>
+<span class="hljs-comment"># pip install https://~~~.whl</span>
+<span class="hljs-comment"># pip install torchvision</span>
+
+<span class="hljs-comment"># python3 (anaconda)</span>
+pyenv install -l | grep anaconda
+pyenv install anaconda* <span class="hljs-comment"># choose latest</span>
+pyenv global anaconda*
+
+<span class="hljs-comment"># conda install conda=*.*.*=py37_0</span>
+<span class="hljs-comment"># conda init bash</span>
+
+</code></pre>
+<p data-line="155" class="code-line">Save the following yaml as env.yaml (version will be changed, so please check here always!)</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-attr">name:</span> <span class="hljs-string">team</span>
+<span class="hljs-attr">channels:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">conda-forge</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-attr">dependencies:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">python=3.7</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">numpy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scipy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scikit-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">matplotlib</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">seaborn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pandas</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">umap-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">hdbscan</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">termcolor</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pyhamcrest</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ruamel.yaml</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">torchvision</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">cudatoolkit=10.</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">tensorboard</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">psutil</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pip</span>
+<span class="hljs-attr">  - pip:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pygame</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"gym[box2d]"</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pybullet</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pyprind</span>
+</code></pre>
+<p data-line="188" class="code-line">After that, in the directory with the above yaml,</p>
+<pre class="hljs hljs-no-border"><code>conda env create -f env.yaml
+<span class="hljs-comment"># if you use pyenv</span>
+pyenv global anaconda*/envs/team
+<span class="hljs-comment"># if you don't use pyenv</span>
+<span class="hljs-comment"># conda init</span>
+<span class="hljs-comment"># echo -e "\n## conda default activation" &gt;&gt; ~/.bashrc</span>
+<span class="hljs-comment"># echo "conda activate team" &gt;&gt; ~/.bashrc</span>
+<span class="hljs-comment"># source ~/.bashrc</span>
+</code></pre>
+<h3 data-line="201" class="code-line revision-head" id="for%20mac">for mac <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20mac"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><pre class="hljs hljs-no-border"><code><span class="hljs-comment"># anyenv for pyenv</span>
+brew install anyenv
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'eval "$(anyenv init -)"'</span> &gt;&gt; ~/.bash_profile
+<span class="hljs-built_in">exec</span> <span class="hljs-variable">$SHELL</span> -l
+anyenv install --init
+git <span class="hljs-built_in">clone</span> https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+anyenv install pyenv
+anyenv update
+
+<span class="hljs-comment"># python3 (anaconda)</span>
+pyenv install -l | grep anaconda
+pyenv install anaconda* <span class="hljs-comment"># choose latest</span>
+pyenv global anaconda*
+
+<span class="hljs-comment"># conda update conda=*.*.*=py37_0</span>
+<span class="hljs-comment"># conda init bash</span>
+
+</code></pre>
+<p data-line="223" class="code-line">Save the following yaml as env.yaml (version will be changed, so please check here always!)</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-attr">name:</span> <span class="hljs-string">team</span>
+<span class="hljs-attr">channels:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">conda-forge</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-attr">dependencies:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">python=3.7</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">numpy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scipy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scikit-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">matplotlib</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">seaborn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pandas</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">umap-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">hdbscan</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">termcolor</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pyhamcrest</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ruamel.yaml</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">torchvision</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">tensorboard</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">psutil</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">opencv</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ffmpeg</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">imagemagick</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pip</span>
+<span class="hljs-attr">  - pip:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pygame</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"gym[box2d]"</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pybullet</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pyprind</span>
+</code></pre>
+<p data-line="258" class="code-line">After that, in the directory with the above yaml,</p>
+<pre class="hljs hljs-no-border"><code>conda env create -f env.yaml
+<span class="hljs-comment"># if you use pyenv</span>
+pyenv global anaconda*/envs/team
+<span class="hljs-comment"># if you don't use pyenv</span>
+<span class="hljs-comment"># conda init</span>
+<span class="hljs-comment"># echo -e "\n## conda default activation" &gt;&gt; ~/.bash_profile</span>
+<span class="hljs-comment"># echo "conda activate team" &gt;&gt; ~/.bash_profile</span>
+<span class="hljs-comment"># source ~/.bash_profile</span>
+</code></pre>
+<h3 data-line="271" class="code-line revision-head" id="tips">tips <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#tips"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><p data-line="273" class="code-line"><code>pyenv global system</code> is for changing back to system python2.
+<code>pyenv local ~~~</code> can set target python under currernt directory, so</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> your_workspace_for_ros
+pyenv <span class="hljs-built_in">local</span> system
+</code></pre>
+<p data-line="279" class="code-line">may be useful to change python only for ros.</p>
+<p data-line="281" class="code-line">Or, instead,</p>
+<pre class="hljs hljs-no-border"><code>pyenv global system
+<span class="hljs-built_in">cd</span> your_workspace_for_python3
+pyenv <span class="hljs-built_in">local</span> anaconda*
+</code></pre>
+<p data-line="288" class="code-line">If you want to activate your own environment, you can use the following commands.</p>
+<pre class="hljs hljs-no-border"><code>conda activate hoge
+conda deactivate
+</code></pre>
+<p data-line="293" class="code-line">If you want to use both pyenv and conda activate, I recommend to use pyenv mainly.</p>
+<pre class="hljs hljs-no-border"><code>pyenv <span class="hljs-built_in">local</span> anaconda*/envs/hoge
+</code></pre>
+<p data-line="297" class="code-line">can change the virtual environment in the current directory to hoge.
+If pyenv cannot switch the virtual environment, you should deactivate, then change the env.</p>
+<p data-line="300" class="code-line">If (base) is always activated when launching new terminal, you can ignore its activation by</p>
+<pre class="hljs hljs-no-border"><code>conda config --<span class="hljs-built_in">set</span> auto_activate_base <span class="hljs-literal">false</span>
+</code></pre>
+<h2 data-line="305" class="code-line revision-head" id="Atom%20editor%20(May%202020%20updated)">Atom editor (May 2020 updated) <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Atom%20editor%20(May%202020%20updated)"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h2><h3 data-line="307" class="code-line revision-head" id="for%20ubuntu-2">for ubuntu <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20ubuntu-2"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><pre class="hljs hljs-no-border"><code>
+<span class="hljs-comment"># install atom</span>
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c <span class="hljs-string">'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" &gt; /etc/apt/sources.list.d/atom.list'</span>
+sudo apt update
+sudo apt install atom
+</code></pre>
+<h3 data-line="318" class="code-line revision-head" id="for%20mac-2">for mac <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20mac-2"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><ol>
+<li data-line="320" class="code-line">download file from <a href="https://atom.io/">here</a></li>
+<li data-line="321" class="code-line">extract it and follow instructions</li>
+</ol>
+<h3 data-line="323" class="code-line revision-head" id="install%20packages">install packages <a class="revision-head-link" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#install%20packages"><span class="icon-link"></span></a><span class="revision-head-edit-button">
+                <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#edit" onclick="Crowi.setCaretLineData(parseInt(this.parentNode.parentNode.dataset.line, 10))">
+                  <i class="icon-note"></i>
+                </a>
+              </span></h3><p data-line="325" class="code-line">To install packages, save the following text as <code>packages.txt</code>.</p>
+<pre class="hljs hljs-no-border"><code>atom-runner@2.7.1
+auto-encoding@0.7.2
+convert-to-utf8@0.2.4
+fancy-bracket-matcher@2.1.0
+file-icons@2.1.31
+git-plus@8.6.2
+goto-definition@1.3.4
+highlight-column@0.5.4
+highlight-line@0.12.0
+highlight-selected@0.15.0
+language-latex@1.2.0
+language-lua@0.9.11
+latex@0.50.2
+latexer@0.3.0
+minimap@4.29.9
+minimap-highlight-selected@4.6.1
+multi-cursor@2.1.5
+open-recent@5.0.0
+pdf-view@0.71.0
+platformio-ide-terminal@2.9.1
+split-diff@1.6.0
+symbols-tree-view@0.14.0
+tablr@1.8.3
+</code></pre>
+<p data-line="351" class="code-line">Then,</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> the directory <span class="hljs-built_in">where</span> packages.txt was saved
+apm install --packages-file packages.txt
+<span class="hljs-comment"># after installation, you should check Auto Toggle in the config of symbols-tree-view</span>
+</code></pre>
+<p data-line="358" class="code-line">There are many usefule shortcuts and plugins, so please expoit them to improve your coding speed!
+<a href="https://www.sitepoint.com/12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow/">example</a></p>
+</div></div></div>
+      </div>
+    
+
+    
+      
+      <div class="tab-pane" id="edit">
+        <div id="page-editor"><div class="row"><div class="col-md-6 col-sm-12 page-editor-editor-container"><div class="editor-container" style="height: 100%; display: flex; flex-direction: column;"><div class="dropzone dropzone-uploadable dropzone-uploadablefile"><div class="m-0 navbar navbar-default navbar-editor" style="min-height: unset;"><ul class="pl-2 nav nav-navbar"><li><button title="Bold" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 10.9 14"><path d="M0 0h5.6c3 0 4.7 1.1 4.7 3.4a3.1 3.1 0 0 1-2.5 3.1 3.7 3.7 0 0 1 3.1 3.5c0 2.9-1.4 4-4.2 4H0zm5.2 6.5c2.7 0 2.6-1.4 2.6-3.1S7.9.7 5.6.7H2.3v5.8zm-2.9 6.6h3.4c2.1 0 2.7-1.1 2.7-3.1s0-2.8-3.2-2.8H2.3z"></path></svg></button></li><li><button title="Italic" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 8.6 13.9"><path d="M8.1 0a.6.6 0 0 1 .5.6c0 .3-.2.6-.7.6H6.2L3.8 12.8h1.8c.2 0 .4.3.4.5a.7.7 0 0 1-.7.6H.5c-.3 0-.5-.4-.5-.6s.4-.6.7-.6h1.7L4.9 1.2H3.1a.5.5 0 0 1-.5-.5c0-.3.1-.7.8-.7z"></path></svg></button></li><li><button title="Strikethrough" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 19.5 14"><path d="M5.8 6.2H9C7.2 5.7 6.3 5 6.3 3.8a2.2 2.2 0 0 1 .9-1.9 4.3 4.3 0 0 1 2.5-.7 4.3 4.3 0 0 1 2.5.7 3.1 3.1 0 0 1 1.1 1.6.7.7 0 0 0 .6.4h.3a.7.7 0 0 0 .4-.8A3.6 3.6 0 0 0 13.1 1a6.7 6.7 0 0 0-6-.5 3.1 3.1 0 0 0-1.7 1.3 3.6 3.6 0 0 0-.6 2 2.9 2.9 0 0 0 1 2.3zm7 2.5a2 2 0 0 1 .6 1.4 2.4 2.4 0 0 1-1 1.9 3.7 3.7 0 0 1-2.5.7 4.6 4.6 0 0 1-3-.8 3.7 3.7 0 0 1-1.2-2 .6.6 0 0 0-.6-.5h-.2a.7.7 0 0 0-.5.8 4.1 4.1 0 0 0 1.5 2.5A6 6 0 0 0 9.8 14a7.5 7.5 0 0 0 2.6-.5 4.9 4.9 0 0 0 1.8-1.4 4.3 4.3 0 0 0 .6-2.2 5 5 0 0 0-.2-1.2zM.4 7.9a.7.7 0 0 1-.4-.5.4.4 0 0 1 .4-.4h18.8a.4.4 0 0 1 .3.6c0 .1-.1.2-.2.3z"></path></svg></button></li><li><button title="Heading" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 13.7 14"><path d="M10.2 0h2.9a.6.6 0 0 1 .6.6.6.6 0 0 1-.6.6h-.8v11.6h.8a.6.6 0 0 1 .6.6.6.6 0 0 1-.6.6h-2.9a.6.6 0 0 1-.6-.6.6.6 0 0 1 .6-.6h.8V7.2H2.7v5.6h.8a.6.6 0 0 1 .6.6.6.6 0 0 1-.6.6H.6a.6.6 0 0 1-.6-.6.6.6 0 0 1 .6-.6h.7V1.2H.6A.6.6 0 0 1 0 .6.6.6 0 0 1 .6 0h2.9a.6.6 0 0 1 .6.6.6.6 0 0 1-.6.6h-.8v4.9H11V1.2h-.8a.6.6 0 0 1-.6-.6.6.6 0 0 1 .6-.6z"></path></svg></button></li><li><button title="Inline Code" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 18.1 14"><path d="M17.8 7.9l-4 3.8a.5.5 0 0 1-.8 0 .5.5 0 0 1 0-.8L16.8 7 13 3.2a.6.6 0 0 1 0-.9.5.5 0 0 1 .8 0l4 3.8a1.3 1.3 0 0 1 0 1.8zM5.2 2.3a.7.7 0 0 1 0 .9L1.3 7l3.9 3.9a.6.6 0 0 1 0 .8.6.6 0 0 1-.9 0L.4 7.9a1.3 1.3 0 0 1 0-1.8l3.9-3.8a.6.6 0 0 1 .9 0zM11.5.8L7.8 13.6a.6.6 0 0 1-.7.4.6.6 0 0 1-.5-.8L10.3.4a.7.7 0 0 1 .8-.4.6.6 0 0 1 .4.8z"></path></svg></button></li><li><button title="Quote" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 17 12"><path d="M5 0H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a1.7 1.7 0 0 0 1-.3V10a.9.9 0 0 1-1 1H3v1h2a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 6H2a.9.9 0 0 1-1-1V2a.9.9 0 0 1 1-1h3a.9.9 0 0 1 1 1v3a.9.9 0 0 1-1 1zm10-6h-3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a1.7 1.7 0 0 0 1-.3V10a.9.9 0 0 1-1 1h-2v1h2a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 6h-3a.9.9 0 0 1-1-1V2a.9.9 0 0 1 1-1h3a.9.9 0 0 1 1 1v3a.9.9 0 0 1-1 1z"></path></svg></button></li><li><button title="List" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 21.6 13.5"><path d="M6.4 1.5h14.5a.7.7 0 0 0 .7-.7.7.7 0 0 0-.7-.7H6.4a.8.8 0 0 0-.8.7.8.8 0 0 0 .8.7zm0 6h14.5a.7.7 0 0 0 .7-.7.7.7 0 0 0-.7-.7H6.4a.8.8 0 0 0-.8.7.8.8 0 0 0 .8.7zm0 6h14.5a.7.7 0 0 0 .7-.7.7.7 0 0 0-.7-.7H6.4a.8.8 0 0 0-.8.7.8.8 0 0 0 .8.7zM.9 1.5h1a.8.8 0 0 0 .9-.7.8.8 0 0 0-.9-.8h-1a.8.8 0 0 0-.9.7.8.8 0 0 0 .9.8zm0 6h1a.8.8 0 0 0 .9-.7.8.8 0 0 0-.9-.8h-1a.8.8 0 0 0-.9.7.8.8 0 0 0 .9.8zm0 6h1a.8.8 0 0 0 .9-.7.8.8 0 0 0-.9-.7h-1a.8.8 0 0 0-.9.7.8.8 0 0 0 .9.7z"></path></svg></button></li><li><button title="Numbered List" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 23.7 16"><path d="M23.7 2a.8.8 0 0 1-.8.8H6.6a.8.8 0 0 1-.7-.8.7.7 0 0 1 .7-.7h16.3a.7.7 0 0 1 .8.7zM6.6 8.7h16.3a.7.7 0 0 0 .8-.7.8.8 0 0 0-.8-.8H6.6a.8.8 0 0 0-.7.8.7.7 0 0 0 .7.7zm0 5.9h16.3a.7.7 0 0 0 .8-.7.7.7 0 0 0-.8-.7H6.6a.7.7 0 0 0-.7.7.7.7 0 0 0 .7.7zM1.5.5V4h.6V0h-.5L.7.5v.4l.8-.4zM.9 9.6l.3-.3c.9-.9 1.4-1.5 1.4-2.2a1.2 1.2 0 0 0-1.3-1.2h-.1a1.4 1.4 0 0 0-1.2.6l.3.4a1.2 1.2 0 0 1 .9-.5.6.6 0 0 1 .8.6v.2c0 .6-.4 1.1-1.5 2.1l-.4.4v.3h2.6v-.4zm.9 4.1a1 1 0 0 0 .7-.9 1 1 0 0 0-1.1-1 2 2 0 0 0-1.1.3v.4l.8-.2c.5 0 .8.2.8.6s-.5.7-.9.7H.7v.4H1c.6 0 1.1.2 1.1.8a.8.8 0 0 1-.9.8l-.9-.3-.2.4a2 2 0 0 0 1.1.3c1 0 1.5-.6 1.5-1.2a1.2 1.2 0 0 0-.9-1.1z"></path></svg></button></li><li><button title="Check List" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 14.4 16"><path d="M13.9 5.5a.5.5 0 0 1 .5.5v9a1.1 1.1 0 0 1-1.1 1H1a1.1 1.1 0 0 1-1-1V2.6a1.1 1.1 0 0 1 1-1h7.1a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5H1V15h12.3V6a.6.6 0 0 1 .6-.5zM3.6 8.3a.5.5 0 0 0 0 .7l2.5 2.5a.8.8 0 0 0 1.1 0h.1l7-10.7c.1-.2.1-.6-.2-.7a.5.5 0 0 0-.7.1L6.6 10.6 4.3 8.3a.5.5 0 0 0-.7 0z"></path></svg></button></li><li><button title="Link" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 16 16"><path d="M4.6 11.4l.4.2h.2v-.2l6.1-6.1a.4.4 0 0 0 .1-.3.5.5 0 0 0-.5-.5h-.3l-6 6.2a.6.6 0 0 0-.1.4c0 .1 0 .3.1.3zm2.8-1a2 2 0 0 1 0 1.1 4.1 4.1 0 0 1-.5.9l-2.1 1.9a1.9 1.9 0 0 1-1.5.7 2 2 0 0 1-1.6-.7 1.9 1.9 0 0 1-.7-1.5 2 2 0 0 1 .7-1.6l1.9-2.1a2 2 0 0 1 2.2-.5l.8-.8a3.2 3.2 0 0 0-1.4-.3 3.3 3.3 0 0 0-2.3.9L1 10.5A3.2 3.2 0 0 0 .9 15H1a2.9 2.9 0 0 0 2.3 1 3.2 3.2 0 0 0 2.3-1l2-1.9a4.6 4.6 0 0 0 .9-1.7 2.9 2.9 0 0 0-.3-1.8zM15 1a2.5 2.5 0 0 0-1-.8 3.1 3.1 0 0 0-3.5.8L8.4 2.9a3.1 3.1 0 0 0-.9 1.8 3.2 3.2 0 0 0 .3 1.9l.8-.8a2 2 0 0 1 0-1.1 2.2 2.2 0 0 1 .5-1.1l2.1-1.9.3-.3.4-.2.4-.2h.5a1.9 1.9 0 0 1 1.5.7 2 2 0 0 1 .7 1.6 1.9 1.9 0 0 1-.7 1.5l-2 2.1-.7.4a1.5 1.5 0 0 1-.9.2h-.4l-.8.8H12l1-.7 2-2.1A3 3 0 0 0 15 1z"></path></svg></button></li><li><button title="Image" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 19 16"><path d="M17.8 0H1.2A1.2 1.2 0 0 0 0 1.2v13.6A1.2 1.2 0 0 0 1.2 16h16.6a1.2 1.2 0 0 0 1.2-1.2V1.2a1.4 1.4 0 0 0-.2-.6.8.8 0 0 0-.4-.4zm0 14.8H1.2v-3.5l4.7-4.6 5 4.9.3.2.5-.2 2.1-1.9 3.9 4h.1v1.1zm0-2.8l-3.5-3.5-.4-.2h-.4l-2.2 2-4.9-4.8-.4-.2c-.2 0-.4 0-.5.2L1.2 9.7V1.2h16.6V12zm-4.2-6.1h.6a1.1 1.1 0 0 0 .6-1.1 1.2 1.2 0 0 0-1.2-1.1 1.3 1.3 0 0 0-1.2 1.2 1.2 1.2 0 0 0 .4.8 1.1 1.1 0 0 0 .8.3z"></path></svg></button></li><li><button title="Table" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 20.3 16"><path d="M19.1 16H1.2A1.2 1.2 0 0 1 0 14.8V1.2A1.2 1.2 0 0 1 1.2 0h17.9a1.2 1.2 0 0 1 1.2 1.2v13.6a1.2 1.2 0 0 1-1.2 1.2zm-5.2-4.3v3.2h5.3v-3.2zm-6.4 0v3.2h5.3v-3.2zm-6.4 0v3.2h5.3v-3.2zm12.8-4.2v3.2h5.3V7.5zm-6.4 0v3.2h5.3V7.5zm-6.4 0v3.2h5.3V7.5zm12.8-4.3v3.2h5.3V3.2zm-6.4 0v3.2h5.3V3.2zm-6.4 0v3.2h5.3V3.2z"></path></svg></button></li><li><button title="draw.io" type="button" class="btn btn-sm btn-default"><svg xmlns="http://www.w3.org/2000/svg" height="13" viewBox="0 0 20.3 16"><path d="M11.76 0L11.78 0.01L11.8 0.02L11.83 0.02L11.85 0.03L11.87 0.05L11.89 0.06L11.91 0.07L11.92 0.09L11.94 0.11L11.95 0.12L11.97 0.14L11.98 0.16L11.99 0.19L12 0.21L12 0.23L12.01 0.25L12.01 0.28L12.01 0.3L12.01 4.94L12.01 4.97L12.01 4.99L12 5.01L12 5.04L11.99 5.06L11.98 5.08L11.97 5.1L11.95 5.12L11.94 5.14L11.92 5.16L11.91 5.17L11.89 5.19L11.87 5.2L11.85 5.21L11.83 5.22L11.8 5.23L11.78 5.24L11.76 5.24L11.73 5.24L11.71 5.24L8.3 5.24L8.3 7.1L13.16 7.1L13.19 7.1L13.21 7.1L13.24 7.11L13.26 7.11L13.28 7.12L13.3 7.13L13.32 7.14L13.34 7.16L13.36 7.17L13.38 7.19L13.4 7.21L13.41 7.22L13.42 7.24L13.43 7.26L13.44 7.28L13.45 7.31L13.46 7.33L13.46 7.35L13.47 7.38L13.47 7.4L13.47 10.08L15.7 10.08L15.72 10.08L15.75 10.08L15.77 10.08L15.79 10.09L15.81 10.1L15.84 10.11L15.86 10.12L15.88 10.13L15.89 10.15L15.91 10.16L15.93 10.18L15.94 10.2L15.95 10.22L15.97 10.24L15.98 10.26L15.98 10.28L15.99 10.31L16 10.33L16 10.35L16 10.38L16 15.02L16 15.04L16 15.07L15.99 15.09L15.98 15.11L15.98 15.13L15.97 15.16L15.95 15.18L15.94 15.2L15.93 15.21L15.91 15.23L15.89 15.25L15.88 15.26L15.86 15.27L15.84 15.29L15.81 15.3L15.79 15.3L15.77 15.31L15.75 15.32L15.72 15.32L15.7 15.32L10.63 15.32L10.61 15.32L10.58 15.32L10.56 15.31L10.54 15.3L10.51 15.3L10.49 15.29L10.47 15.27L10.45 15.26L10.44 15.25L10.42 15.23L10.4 15.21L10.39 15.2L10.37 15.18L10.36 15.16L10.35 15.13L10.34 15.11L10.34 15.09L10.33 15.07L10.33 15.04L10.33 15.02L10.33 10.38L10.33 10.35L10.33 10.33L10.34 10.31L10.34 10.28L10.35 10.26L10.36 10.24L10.37 10.22L10.39 10.2L10.4 10.18L10.42 10.16L10.44 10.15L10.45 10.13L10.47 10.12L10.49 10.11L10.51 10.1L10.54 10.09L10.56 10.08L10.58 10.08L10.61 10.08L10.63 10.08L12.86 10.08L12.86 7.71L3.14 7.71L3.14 10.08L5.37 10.08L5.39 10.08L5.42 10.08L5.44 10.08L5.46 10.09L5.49 10.1L5.51 10.11L5.53 10.12L5.55 10.13L5.56 10.15L5.58 10.16L5.6 10.18L5.61 10.2L5.63 10.22L5.64 10.24L5.65 10.26L5.66 10.28L5.66 10.31L5.67 10.33L5.67 10.35L5.67 10.38L5.67 15.02L5.67 15.04L5.67 15.07L5.66 15.09L5.66 15.11L5.65 15.13L5.64 15.16L5.63 15.18L5.61 15.2L5.6 15.21L5.58 15.23L5.56 15.25L5.55 15.26L5.53 15.27L5.51 15.29L5.49 15.3L5.46 15.3L5.44 15.31L5.42 15.32L5.39 15.32L5.37 15.32L0.3 15.32L0.28 15.32L0.25 15.32L0.23 15.31L0.21 15.3L0.19 15.3L0.16 15.29L0.14 15.27L0.12 15.26L0.11 15.25L0.09 15.23L0.07 15.21L0.06 15.2L0.05 15.18L0.03 15.16L0.02 15.13L0.02 15.11L0.01 15.09L0 15.07L0 15.04L0 15.02L0 10.38L0 10.35L0 10.33L0.01 10.31L0.02 10.28L0.02 10.26L0.03 10.24L0.05 10.22L0.06 10.2L0.07 10.18L0.09 10.16L0.11 10.15L0.12 10.13L0.14 10.12L0.16 10.11L0.19 10.1L0.21 10.09L0.23 10.08L0.25 10.08L0.28 10.08L0.3 10.08L2.53 10.08L2.53 7.4L2.53 7.38L2.54 7.35L2.54 7.33L2.55 7.31L2.56 7.28L2.57 7.26L2.58 7.24L2.59 7.22L2.6 7.21L2.62 7.19L2.64 7.17L2.66 7.16L2.68 7.14L2.7 7.13L2.72 7.12L2.74 7.11L2.76 7.11L2.79 7.1L2.81 7.1L2.84 7.1L7.7 7.1L7.7 5.24L4.29 5.24L4.27 5.24L4.24 5.24L4.22 5.24L4.2 5.23L4.17 5.22L4.15 5.21L4.13 5.2L4.11 5.19L4.09 5.17L4.08 5.16L4.06 5.14L4.05 5.12L4.03 5.1L4.02 5.08L4.01 5.06L4 5.04L4 5.01L3.99 4.99L3.99 4.97L3.99 4.94L3.99 0.3L3.99 0.28L3.99 0.25L4 0.23L4 0.21L4.01 0.19L4.02 0.16L4.03 0.14L4.05 0.12L4.06 0.11L4.08 0.09L4.09 0.07L4.11 0.06L4.13 0.05L4.15 0.03L4.17 0.02L4.2 0.02L4.22 0.01L4.24 0L4.27 0L4.29 0L11.71 0L11.73 0L11.76 0ZM0.61 14.71L5.06 14.71L5.06 10.68L0.61 10.68L0.61 14.71ZM10.94 14.71L15.39 14.71L15.39 10.68L10.94 10.68L10.94 14.71ZM4.6 4.64L11.4 4.64L11.4 0.61L4.6 0.61L4.6 4.64Z" id="a1rZaAznW0"></path></svg></button></li></ul></div><div class="react-codemirror2"><div class="CodeMirror cm-s-elegant CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 2062px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-link">[example]</span><span class="cm-string cm-url CodeMirror-matchingbracket">(</span><span class="cm-string cm-url">https://www.sitepoint.com/12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow/</span><span class="cm-string cm-url CodeMirror-matchingbracket">)</span></span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div><div class="overlay overlay-gfm-cheatsheet mt-1 p-3"><div class="mr-4"><button type="button" class="btn-link gfm-cheatsheet-modal-link text-muted small p-0"><i class="icon-question"></i> Markdown</button></div></div><input accept="" type="file" autocomplete="off" tabindex="-1" style="display: none;"></div><button type="button" class="btn btn-default btn-block btn-open-dropzone"><i class="icon-paper-clip" aria-hidden="true"></i>&nbsp; Attach files<span class="desc-long">&nbsp;by dragging &amp; dropping,&nbsp;<span class="btn-link">selecting them</span>,&nbsp; or pasting from the clipboard.</span></button></div></div><div class="col-md-6 hidden-sm hidden-xs page-editor-preview-container"><div class="page-editor-preview-body"><div class="wiki "><h1 data-line="0" class="code-line revision-head">setup</h1>
+<h2 data-line="2" class="code-line revision-head">Ubuntu 16.04 pc (Feb 2020 updated)</h2>
+<ol>
+<li data-line="3" class="code-line">install ubuntu 16.04 with English edition
+<ul>
+<li data-line="4" class="code-line">I have live usb to install it, so please ask me.</li>
+</ul>
+</li>
+<li data-line="5" class="code-line">update (several times?)</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt update
+sudo apt upgrade
+</code></pre>
+<ol>
+<li data-line="10" class="code-line">install cuda if NVIDIA GPU is inserted
+<ol>
+<li data-line="11" class="code-line">access <a href="https://developer.nvidia.com/cuda-downloads">here</a> and choose
+<ol>
+<li data-line="12" class="code-line">Linux</li>
+<li data-line="13" class="code-line">x86_64</li>
+<li data-line="14" class="code-line">Ubuntu</li>
+<li data-line="15" class="code-line">16.04</li>
+<li data-line="16" class="code-line">deb[network]</li>
+</ol>
+</li>
+<li data-line="17" class="code-line">install cuda from deb package</li>
+<li data-line="18" class="code-line">add paths related to cuda</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>echo -e "\n## CUDA and cuDNN paths"  &gt;&gt; ~/.bashrc
+echo 'export PATH=/usr/local/cuda/bin:${PATH}' &gt;&gt; ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre>
+<ol>
+<li data-line="25" class="code-line">reboot and check <code>nvidia-smi</code></li>
+<li data-line="26" class="code-line">install cuDNN
+<ol>
+<li data-line="27" class="code-line">access <a href="https://developer.nvidia.com/cudnn">here</a>
+<ol>
+<li data-line="28" class="code-line">Download cuDNN</li>
+<li data-line="29" class="code-line">Join now</li>
+<li data-line="30" class="code-line">I Agree to ~~~</li>
+<li data-line="31" class="code-line">download corresponding version
+<ul>
+<li data-line="32" class="code-line">cuDNN v*.<em>.</em> Runtime Library for Ubuntu16.04 [Deb]</li>
+<li data-line="33" class="code-line">cuDNN v*.<em>.</em> Developer Library for Ubuntu16.04 [Deb]</li>
+<li data-line="34" class="code-line">cuDNN v*.<em>.</em> Code Samples and User Guide for Ubuntu16.04 [Deb]</li>
+</ul>
+</li>
+</ol>
+</li>
+<li data-line="35" class="code-line">install them</li>
+</ol>
+</li>
+</ol>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> the directory <span class="hljs-built_in">where</span> the deb package is downloaded
+sudo dpkg -i libcudnn*_*+cuda*_amd64.deb
+sudo dpkg -i libcudnn*-dev_*+cuda*_amd64.deb
+sudo dpkg -i libcudnn*-doc_*+cuda*_amd64.deb
+</code></pre>
+<ol>
+<li data-line="42" class="code-line">test samples</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>cuda-install-samples-*.sh .
+<span class="hljs-built_in">cd</span> NVIDIA_CUDA-*_Samples
+make -k
+<span class="hljs-comment"># there other samples</span>
+<span class="hljs-built_in">cd</span> 2_Graphics/volumeRender
+./volumeRender
+</code></pre>
+</li>
+<li data-line="51" class="code-line">install utilities</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev libpng-dev dvipng
+sudo apt install exfat-fuse exfat-utils
+sudo apt install mesa-utils
+sudo apt install terminator kazam vlc ffmpeg imagemagick
+</code></pre>
+<p data-line="58" class="code-line">To install shotcut, please download latest app (portable ver.) from official page (see <a href="https://shotcut.org/download/">here</a>), and extract it to somewhere.</p>
+<ol>
+<li data-line="59" class="code-line">install git</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install git libgnome-keyring-dev
+<span class="hljs-built_in">cd</span> /usr/share/doc/git/contrib/credential/gnome-keyring/
+sudo make
+git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+git config --global push.default simple
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+<span class="hljs-comment"># if this pc is your own pc</span>
+git config --global user.name <span class="hljs-string">"Account name of github or gitlab"</span>
+git config --global user.email <span class="hljs-string">"Your mail address for registration"</span> 
+</code></pre>
+<ol>
+<li data-line="72" class="code-line">install latex</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install texlive-lang-cjk
+sudo apt install texlive-latex-extra
+sudo apt install ttf-mscorefonts-installer
+sudo <span class="hljs-built_in">fc</span>-cache
+</code></pre>
+<ol>
+<li data-line="79" class="code-line">install ibus-mozc for Japanese</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo apt install ibus-mozc
+killall ibus-daemon
+ibus-daemon -d -x &amp;
+</code></pre>
+<ol>
+<li data-line="85" class="code-line"><strong>(Option)</strong> install ROS kinetic (see <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">here</a>)</li>
+</ol>
+<pre class="hljs hljs-no-border"><code>sudo sh -c <span class="hljs-string">'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/ros-latest.list'</span>
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt update
+sudo apt-get install ros-kinetic-desktop-full
+sudo rosdep init
+rosdep update
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"source /opt/ros/kinetic/setup.bash"</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">source</span> ~/.bashrc
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential python-pip
+</code></pre>
+<ol>
+<li data-line="97" class="code-line"><strong>(Option)</strong> install google remote desktop
+<ol>
+<li data-line="98" class="code-line">install google chrome</li>
+<li data-line="99" class="code-line">access <a href="https://remotedesktop.google.com/">https://remotedesktop.google.com/</a></li>
+<li data-line="100" class="code-line">try!</li>
+<li data-line="101" class="code-line">login to your google account</li>
+<li data-line="102" class="code-line">open chrome remote desktop and enable remote access with setting your PIN
+If you installed this using deb package, and if only wallpaper when login, please try <a href="http://wiki.monolith.naist.jp/attachment/5ea69048561e55005cfb3402">chrome_remote_ubuntu.bash</a>.</li>
+</ol>
+</li>
+</ol>
+<p data-line="105" class="code-line">When using terminator,</p>
+<ol>
+<li data-line="106" class="code-line">Open preferences</li>
+<li data-line="107" class="code-line">Profiles -&gt; Scrolling</li>
+<li data-line="108" class="code-line">Check infinite scrollback
+And to enable color setting,</li>
+<li data-line="110" class="code-line">Open ~/.bashrc</li>
+<li data-line="111" class="code-line">Search force_color_prompt=yes</li>
+<li data-line="112" class="code-line">Uncomment it</li>
+</ol>
+<p data-line="114" class="code-line">For auto mounting second HDD,</p>
+<ol>
+<li data-line="115" class="code-line">Open Disks</li>
+<li data-line="116" class="code-line">Select target HDD</li>
+<li data-line="117" class="code-line">Click settings (gears icon) and Edit mount options</li>
+<li data-line="118" class="code-line">ON Automatic Mount Options</li>
+</ol>
+<h2 data-line="120" class="code-line revision-head">Python (April 2020 updated)</h2>
+<h3 data-line="122" class="code-line revision-head">for ubuntu</h3>
+<pre class="hljs hljs-no-border"><code><span class="hljs-comment"># anyenv for pyenv</span>
+git <span class="hljs-built_in">clone</span> https://github.com/riywo/anyenv ~/.anyenv
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'export PATH="$HOME/.anyenv/bin:$PATH"'</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'eval "$(anyenv init -)"'</span> &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">exec</span> <span class="hljs-variable">$SHELL</span> -l
+anyenv install --init
+git <span class="hljs-built_in">clone</span> https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+anyenv install pyenv
+anyenv update
+
+<span class="hljs-comment"># packages for python2 (mainly for ROS, so if ros is not used in your pc, please ignore)</span>
+<span class="hljs-comment"># the latest numpy is only for python3, so this process would fail</span>
+<span class="hljs-comment"># pip install cython numba numpy scipy pandas scikit-learn ruamel.yaml termcolor future fasteners pygame</span>
+<span class="hljs-comment"># pip install networkx==2.2</span>
+<span class="hljs-comment"># pip install hdbscan</span>
+<span class="hljs-comment"># pip install gym "gym[box2d]"</span>
+<span class="hljs-comment"># pytorch from official site</span>
+<span class="hljs-comment"># pip install https://~~~.whl</span>
+<span class="hljs-comment"># pip install torchvision</span>
+
+<span class="hljs-comment"># python3 (anaconda)</span>
+pyenv install -l | grep anaconda
+pyenv install anaconda* <span class="hljs-comment"># choose latest</span>
+pyenv global anaconda*
+
+<span class="hljs-comment"># conda install conda=*.*.*=py37_0</span>
+<span class="hljs-comment"># conda init bash</span>
+
+</code></pre>
+<p data-line="155" class="code-line">Save the following yaml as env.yaml (version will be changed, so please check here always!)</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-attr">name:</span> <span class="hljs-string">team</span>
+<span class="hljs-attr">channels:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">conda-forge</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-attr">dependencies:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">python=3.7</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">numpy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scipy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scikit-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">matplotlib</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">seaborn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pandas</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">umap-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">hdbscan</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">termcolor</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pyhamcrest</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ruamel.yaml</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">torchvision</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">cudatoolkit=10.</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">tensorboard</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">psutil</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pip</span>
+<span class="hljs-attr">  - pip:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pygame</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"gym[box2d]"</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pybullet</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pyprind</span>
+</code></pre>
+<p data-line="188" class="code-line">After that, in the directory with the above yaml,</p>
+<pre class="hljs hljs-no-border"><code>conda env create -f env.yaml
+<span class="hljs-comment"># if you use pyenv</span>
+pyenv global anaconda*/envs/team
+<span class="hljs-comment"># if you don't use pyenv</span>
+<span class="hljs-comment"># conda init</span>
+<span class="hljs-comment"># echo -e "\n## conda default activation" &gt;&gt; ~/.bashrc</span>
+<span class="hljs-comment"># echo "conda activate team" &gt;&gt; ~/.bashrc</span>
+<span class="hljs-comment"># source ~/.bashrc</span>
+</code></pre>
+<h3 data-line="201" class="code-line revision-head">for mac</h3>
+<pre class="hljs hljs-no-border"><code><span class="hljs-comment"># anyenv for pyenv</span>
+brew install anyenv
+<span class="hljs-built_in">echo</span> <span class="hljs-string">'eval "$(anyenv init -)"'</span> &gt;&gt; ~/.bash_profile
+<span class="hljs-built_in">exec</span> <span class="hljs-variable">$SHELL</span> -l
+anyenv install --init
+git <span class="hljs-built_in">clone</span> https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+anyenv install pyenv
+anyenv update
+
+<span class="hljs-comment"># python3 (anaconda)</span>
+pyenv install -l | grep anaconda
+pyenv install anaconda* <span class="hljs-comment"># choose latest</span>
+pyenv global anaconda*
+
+<span class="hljs-comment"># conda update conda=*.*.*=py37_0</span>
+<span class="hljs-comment"># conda init bash</span>
+
+</code></pre>
+<p data-line="223" class="code-line">Save the following yaml as env.yaml (version will be changed, so please check here always!)</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-attr">name:</span> <span class="hljs-string">team</span>
+<span class="hljs-attr">channels:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">conda-forge</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-attr">dependencies:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">python=3.7</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">numpy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scipy</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">scikit-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">matplotlib</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">seaborn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pandas</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">umap-learn</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">hdbscan</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">termcolor</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pyhamcrest</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ruamel.yaml</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pytorch</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">torchvision</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">tensorboard</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">psutil</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">opencv</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">ffmpeg</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">imagemagick</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">pip</span>
+<span class="hljs-attr">  - pip:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pygame</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"gym[box2d]"</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pybullet</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pyprind</span>
+</code></pre>
+<p data-line="258" class="code-line">After that, in the directory with the above yaml,</p>
+<pre class="hljs hljs-no-border"><code>conda env create -f env.yaml
+<span class="hljs-comment"># if you use pyenv</span>
+pyenv global anaconda*/envs/team
+<span class="hljs-comment"># if you don't use pyenv</span>
+<span class="hljs-comment"># conda init</span>
+<span class="hljs-comment"># echo -e "\n## conda default activation" &gt;&gt; ~/.bash_profile</span>
+<span class="hljs-comment"># echo "conda activate team" &gt;&gt; ~/.bash_profile</span>
+<span class="hljs-comment"># source ~/.bash_profile</span>
+</code></pre>
+<h3 data-line="271" class="code-line revision-head">tips</h3>
+<p data-line="273" class="code-line"><code>pyenv global system</code> is for changing back to system python2.
+<code>pyenv local ~~~</code> can set target python under currernt directory, so</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> your_workspace_for_ros
+pyenv <span class="hljs-built_in">local</span> system
+</code></pre>
+<p data-line="279" class="code-line">may be useful to change python only for ros.</p>
+<p data-line="281" class="code-line">Or, instead,</p>
+<pre class="hljs hljs-no-border"><code>pyenv global system
+<span class="hljs-built_in">cd</span> your_workspace_for_python3
+pyenv <span class="hljs-built_in">local</span> anaconda*
+</code></pre>
+<p data-line="288" class="code-line">If you want to activate your own environment, you can use the following commands.</p>
+<pre class="hljs hljs-no-border"><code>conda activate hoge
+conda deactivate
+</code></pre>
+<p data-line="293" class="code-line">If you want to use both pyenv and conda activate, I recommend to use pyenv mainly.</p>
+<pre class="hljs hljs-no-border"><code>pyenv <span class="hljs-built_in">local</span> anaconda*/envs/hoge
+</code></pre>
+<p data-line="297" class="code-line">can change the virtual environment in the current directory to hoge.
+If pyenv cannot switch the virtual environment, you should deactivate, then change the env.</p>
+<p data-line="300" class="code-line">If (base) is always activated when launching new terminal, you can ignore its activation by</p>
+<pre class="hljs hljs-no-border"><code>conda config --<span class="hljs-built_in">set</span> auto_activate_base <span class="hljs-literal">false</span>
+</code></pre>
+<h2 data-line="305" class="code-line revision-head">Atom editor (May 2020 updated)</h2>
+<h3 data-line="307" class="code-line revision-head">for ubuntu</h3>
+<pre class="hljs hljs-no-border"><code>
+<span class="hljs-comment"># install atom</span>
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c <span class="hljs-string">'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" &gt; /etc/apt/sources.list.d/atom.list'</span>
+sudo apt update
+sudo apt install atom
+</code></pre>
+<h3 data-line="318" class="code-line revision-head">for mac</h3>
+<ol>
+<li data-line="320" class="code-line">download file from <a href="https://atom.io/">here</a></li>
+<li data-line="321" class="code-line">extract it and follow instructions</li>
+</ol>
+<h3 data-line="323" class="code-line revision-head">install packages</h3>
+<p data-line="325" class="code-line">To install packages, save the following text as <code>packages.txt</code>.</p>
+<pre class="hljs hljs-no-border"><code>atom-runner@2.7.1
+auto-encoding@0.7.2
+convert-to-utf8@0.2.4
+fancy-bracket-matcher@2.1.0
+file-icons@2.1.31
+git-plus@8.6.2
+goto-definition@1.3.4
+highlight-column@0.5.4
+highlight-line@0.12.0
+highlight-selected@0.15.0
+language-latex@1.2.0
+language-lua@0.9.11
+latex@0.50.2
+latexer@0.3.0
+minimap@4.29.9
+minimap-highlight-selected@4.6.1
+multi-cursor@2.1.5
+open-recent@5.0.0
+pdf-view@0.71.0
+platformio-ide-terminal@2.9.1
+split-diff@1.6.0
+symbols-tree-view@0.14.0
+tablr@1.8.3
+</code></pre>
+<p data-line="351" class="code-line">Then,</p>
+<pre class="hljs hljs-no-border"><code><span class="hljs-built_in">cd</span> the directory <span class="hljs-built_in">where</span> packages.txt was saved
+apm install --packages-file packages.txt
+<span class="hljs-comment"># after installation, you should check Auto Toggle in the config of symbols-tree-view</span>
+</code></pre>
+<p data-line="358" class="code-line">There are many usefule shortcuts and plugins, so please expoit them to improve your coding speed!
+<a href="https://www.sitepoint.com/12-favorite-atom-tips-and-shortcuts-to-improve-your-workflow/">example</a></p>
+</div></div></div></div></div>
+      </div>
+      <div class="tab-pane" id="hackmd">
+        <div id="page-editor-with-hackmd"><div class="position-relative"><div class="hackmd-preinit d-flex justify-content-center align-items-center"><div><p class="text-center hackmd-status-label"><i class="fa fa-file-text"></i> HackMD is not set up.</p></div></div></div></div>
+      </div>
+      
+
+<div class="page-editor-footer d-flex flex-row align-items-center justify-content-between">
+
+  <div>
+    <div id="page-editor-options-selector" class="hidden-xs"><div class="d-flex flex-row"><span class="m-l-5"><div class="my-0 form-group"><label for="formControlsSelect" class="control-label">Theme:</label><div class="btn-group bootstrap-select btn-group-sm form-control-dummy"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="formControlsSelect" title="elegant"><span class="filter-option pull-left">elegant</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">eclipse</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">elegant</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">neo</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">mdn-like</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">material</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">dracula</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">monokai</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">twilight</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select placeholder="select" id="formControlsSelect" class="btn-group-sm selectpicker form-control-dummy" tabindex="-98"><option value="eclipse">eclipse</option><option value="elegant">elegant</option><option value="neo">neo</option><option value="mdn-like">mdn-like</option><option value="material">material</option><option value="dracula">dracula</option><option value="monokai">monokai</option><option value="twilight">twilight</option></select></div></div></span><span class="m-l-5"><div class="my-0 form-group"><label for="formControlsSelect" class="control-label">Keymap:</label><div class="btn-group bootstrap-select btn-group-sm form-control-dummy"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="formControlsSelect" title="Default"><span class="filter-option pull-left">Default</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true">Default<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><img src="./pc_set_files/vim.png" width="16px" class="m-r-5"> Vim<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><img src="./pc_set_files/emacs.png" width="16px" class="m-r-5"> Emacs<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><img src="./pc_set_files/sublime.png" width="16px" class="m-r-5"> Sublime Text<span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select placeholder="select" id="formControlsSelect" class="btn-group-sm selectpicker form-control-dummy" tabindex="-98"><option value="default" data-content="Default">Default</option><option value="vim" data-content="&lt;img src=&#39;/images/icons/vim.png&#39; width=&#39;16px&#39; class=&#39;m-r-5&#39;&gt;&lt;/img&gt; Vim">Vim</option><option value="emacs" data-content="&lt;img src=&#39;/images/icons/emacs.png&#39; width=&#39;16px&#39; class=&#39;m-r-5&#39;&gt;&lt;/img&gt; Emacs">Emacs</option><option value="sublime" data-content="&lt;img src=&#39;/images/icons/sublime.png&#39; width=&#39;16px&#39; class=&#39;m-r-5&#39;&gt;&lt;/img&gt; Sublime Text">Sublime Text</option></select></div></div></span><span class="m-l-5"><div class="my-0 form-group"><div class="configuration-dropdown dropup btn-group"><button id="configurationDropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-sm btn-default"><i class="icon-settings"></i> <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="configurationDropdown"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><span class="icon-container"></span><span class="menuitem-label">アクティブ行をハイライト</span><span class="icon-container"><i class="text-info"></i></span></a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#"><span class="icon-container"><img src="./pc_set_files/fx.svg" width="14px" alt="fx"></span><span class="menuitem-label">MathJax Rendering</span><i class="text-info"></i></a></li></ul></div></div></span></div></div>
+  </div>
+
+  <div id="save-page-controls" data-grant="2" data-grant-group="" data-grant-group-name=""><div class="d-flex align-items-center form-inline"><div class="mr-2"><div class="grant-selector m-b-0 form-group"><div class="btn-group bootstrap-select btn-group-sm form-control-dummy"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="リンクを知っている人のみ"><span class="filter-option pull-left"><i class="icon icon-fw icon-link text-info"></i> <span class="text-info">リンクを知っている人のみ</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><i class="icon icon-fw icon-people "></i> <span class="">公開</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><i class="icon icon-fw icon-link text-info"></i> <span class="text-info">リンクを知っている人のみ</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><i class="icon icon-fw icon-lock text-danger"></i> <span class="text-danger">自分のみ</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><i class="icon icon-fw icon-options "></i> <span class="">特定グループのみ</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="display: none;" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><i class="icon icon-fw icon-organization text-success"></i> <span class="group-name text-success"></span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select placeholder="select" class="btn-group-sm selectpicker form-control-dummy" tabindex="-98"><option value="1" data-content="&lt;i class=&quot;icon icon-fw icon-people &quot;&gt;&lt;/i&gt; &lt;span class=&quot;&quot;&gt;公開&lt;/span&gt;">公開</option><option value="2" data-content="&lt;i class=&quot;icon icon-fw icon-link text-info&quot;&gt;&lt;/i&gt; &lt;span class=&quot;text-info&quot;&gt;リンクを知っている人のみ&lt;/span&gt;" selected="">リンクを知っている人のみ</option><option value="4" data-content="&lt;i class=&quot;icon icon-fw icon-lock text-danger&quot;&gt;&lt;/i&gt; &lt;span class=&quot;text-danger&quot;&gt;自分のみ&lt;/span&gt;">自分のみ</option><option value="5" data-content="&lt;i class=&quot;icon icon-fw icon-options &quot;&gt;&lt;/i&gt; &lt;span class=&quot;&quot;&gt;特定グループのみ&lt;/span&gt;">特定グループのみ</option><option value="specifiedGroup" data-content="&lt;i class=&quot;icon icon-fw icon-organization text-success&quot;&gt;&lt;/i&gt; &lt;span class=&quot;group-name text-success&quot;&gt;&lt;/span&gt;" style="display: none;"></option></select></div></div></div><div role="toolbar" class="btn-toolbar"><div class="dropup btn-group btn-group-primary"><button type="button" class="btn-submit btn btn-primary">更新</button><button aria-label="更新" id="spl-btn-submit" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-primary"> <span class="caret"></span></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="spl-btn-submit"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="http://wiki.monolith.naist.jp/user/kobayashi/setup#">更新と同時に全ての配下ページのスコープを上書き</a></li></ul></div></div></div></div>
+
+</div>
+
+<div class="file-module hidden"></div>
+
+    
+
+    
+    
+    <div class="tab-pane revision-history m-t-10" id="revision-history">
+    </div>
+    
+
+  </div>
+
+  <div id="page-status-alert"></div>
+</div>
+
+
+      
+      <script>
+        $('#revision-toc').remove();
+      </script>
+
+    </div> 
+
+    
+    <div class="col-lg-2 col-md-3 revision-toc-container hidden-sm hidden-xs">
+      <div class="liker-and-seenusers">
+  <div class="text-right">
+    
+    <span id="liker-list" class="mr-3" data-user-ids=""><span></span></span>
+    <span class="text-info">
+      <i class="icon-fw icon-like"></i><span class="liker-user-count">0</span>
+    </span>
+  </div>
+  <div class="text-right">
+    
+    <span id="seen-user-list" class="mr-3" data-user-ids="5e7d5ec7561e55005cfb331b,5ec1ffd39465af0052807d33,5ec2578c9465af0052807d3a,5e8d80fe561e55005cfb33f3,5ecb4642a89ca700515f06a4,5ecb4705a89ca700515f06a8,5e8ac78c561e55005cfb33e2,5e8d71d0561e55005cfb33ef,5e8ac4f2561e55005cfb33de,5e8bcb96561e55005cfb33ea"><span><span><a href="http://wiki.monolith.naist.jp/user/kobayashi"><img src="./pc_set_files/user.svg" alt="kobayashi" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/ryoma-wa"><img src="./pc_set_files/user.svg" alt="ryoma-wa" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/yuhi-sa"><img src="./pc_set_files/user.svg" alt="yuhi-sa" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/toshiki-t"><img src="./pc_set_files/user.svg" alt="toshiki-t" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/kota-fu"><img src="./pc_set_files/user.svg" alt="kota-fu" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/yusuke-t"><img src="./pc_set_files/user.svg" alt="yusuke-t" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/toshiya-m"><img src="./pc_set_files/user.svg" alt="toshiya-m" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/kenta-yo"><img src="./pc_set_files/user.svg" alt="kenta-yo" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/takahito-e"><img src="./pc_set_files/user.svg" alt="takahito-e" class="img-circle picture picture-xs"></a></span><span><a href="http://wiki.monolith.naist.jp/user/hidehito-f"><img src="./pc_set_files/user.svg" alt="hidehito-f" class="img-circle picture picture-xs"></a></span></span></span>
+    <span class="text-danger">
+      <i class="icon-fw fa fa-paw"></i><span class="seen-user-count">10</span>
+    </span>
+  </div>
+</div>
+
+      <div id="revision-toc" class="revision-toc mt-3 affix-top" data-spy="affix" data-offset-top="123"><div id="revision-toc-content" class="revision-toc-content"><ul class="markdownIt-TOC">
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#setup">setup</a>
+<ul>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Ubuntu%2016.04%20pc%20(Feb%202020%20updated)">Ubuntu 16.04 pc (Feb 2020 updated)</a></li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Python%20(April%202020%20updated)">Python (April 2020 updated)</a>
+<ul>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20ubuntu">for ubuntu</a></li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20mac">for mac</a></li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#tips">tips</a></li>
+</ul>
+</li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#Atom%20editor%20(May%202020%20updated)">Atom editor (May 2020 updated)</a>
+<ul>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20ubuntu-2">for ubuntu</a></li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#for%20mac-2">for mac</a></li>
+<li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#install%20packages">install packages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div>
+    </div> 
+
+  </div>
+
+  
+  <div class="row page-list hidden-print m-t-30">
+    <div class="col-md-10">
+      <div class="page-list-container">
+  <ul class="nav nav-tabs">
+      <li class="active"><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#view-list" data-toggle="tab">リスト表示</a></li>
+      
+      <li><a href="http://wiki.monolith.naist.jp/user/kobayashi/setup#view-timeline" data-toggle="tab">タイムライン表示</a></li>
+      
+  </ul>
+
+  <div class="tab-content">
+    
+    <div class="p-t-10 active tab-pane fade page-list-container in" id="view-list">
+      
+        <div class="m-t-10">
+          
+          There are no pages under <strong>/user/kobayashi/setup</strong>.
+          
+        </div>
+      
+    </div>
+
+    
+    
+      <div class="tab-pane m-t-30" id="view-timeline">
+        <script type="text/template" id="page-timeline-data">[]</script>
+        
+        <div id="page-timeline"></div>
+      </div>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  
+
+
+      
+  <div class="page-comments-row row hidden-print">
+
+  <div class="page-comments col-lg-7 col-md-9">
+
+    <h4><i class="icon-fw icon-bubbles"></i> Comments</h4>
+
+    <div class="page-comments-list" id="page-comments-list"><div><div></div></div></div>
+
+    
+    <div id="page-comment-write"><div class="form page-comment-form"><div class="comment-form"><div class="comment-form-user"><a href="http://wiki.monolith.naist.jp/user/yuhi-sa"><img src="./pc_set_files/user.svg" alt="yuhi-sa" class="img-circle picture"></a></div><div class="comment-form-main"><button type="button" class="btn btn-lg btn-link center-block"><i class="icon-bubble"></i> Add Comment</button></div></div></div></div>
+    
+
+  </div>
+
+</div>
+
+
+  
+    <div class="row page-attachments-row hidden-print">
+  <div class="col-xs-12">
+    <div class="m-t-15 m-b-15">
+      <div class="page-attachments" id="page-attachment"><div><div><h5><strong>Attachments</strong></h5><ul class="pl-2"><li class="attachment"><span class="mr-1 attachment-userpicture"><a href="http://wiki.monolith.naist.jp/user/kobayashi"><img src="./pc_set_files/user.svg" alt="kobayashi" class="img-circle picture picture-sm"></a></span><a href="http://wiki.monolith.naist.jp/attachment/5ea69048561e55005cfb3402"><i class="icon-doc"></i> chrome_remote_ubuntu.bash</a><span class="attachment-filetype label label-default">application/octet-stream</span><span class="attachment-in-use label label-info">In Use</span><a class="attachment-download" href="http://wiki.monolith.naist.jp/download/5ea69048561e55005cfb3402"><i class="icon-cloud-download"></i></a><a class="text-danger attachment-delete"><i class="icon-trash"></i></a></li></ul></div></div></div>
+
+      <p class="page-meta">
+        </p><p>Last revision posted at 2020-09-02 16:57:59 by <a href="http://wiki.monolith.naist.jp/user/kobayashi"><img src="./pc_set_files/user.svg" class="picture picture-sm img-circle"> </a></p>
+        <p>Created at 2020-04-02 14:35:46 by <a href="http://wiki.monolith.naist.jp/user/kobayashi"><img src="./pc_set_files/user.svg" class="picture picture-sm img-circle"> </a></p>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+  
+
+    </div>
+
+  </div>
+
+</div><!-- /.container-fluid -->
+
+<footer class="footer">
+  <div class="system-version hidden-xs">
+  <span>
+    <a href="https://growi.org/">GROWI</a> 3.7.0
+  </span>
+  <span>
+    <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup" data-target="#shortcuts-modal" data-toggle="modal"><i class="fa fa-keyboard-o"></i>&nbsp;<span class="cmd-key mac"></span>-/</a>
+  </span>
+</div>
+
+</footer>
+ 
+  </div><!-- /#page-wrapper -->
+
+</div><!-- /#wrapper -->
+
+<!-- /#staff-credit -->
+<div id="staff-credit"></div>
+
+<div class="modal" id="shortcuts-modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-title">ショートカット</div>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><strong>グローバルショートカット</strong></h3>
+
+            <table class="table">
+              <tbody><tr>
+                <th>ショートカットヘルプの表示/非表示:</th>
+                <td><span class="key cmd-key mac"></span> + <span class="key">/</span></td>
+              </tr>
+              <tr>
+                <th>ページ作成:</th>
+                <td><span class="key">C</span></td>
+              </tr>
+              <tr>
+                <th>ページ編集:</th>
+                <td><span class="key">E</span></td>
+              </tr>
+              <tr>
+                <th>コントリビューターを表示:</th>
+                <td>
+                  <a href="https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%8A%E3%83%9F%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89" target="_blank">コナミコマンド</a><br>
+                  <span class="key key-small">↑</span>&nbsp;<span class="key key-small">↑</span>
+                  <span class="key key-small">↓</span>&nbsp;<span class="key key-small">↓</span>
+                  <span class="key key-small">←</span>&nbsp;<span class="key key-small">→</span>
+                  <span class="key key-small">←</span>&nbsp;<span class="key key-small">→</span>
+                  <span class="key key-small">B</span>&nbsp;<span class="key key-small">A</span>
+                </td>
+              </tr>
+            </tbody></table>
+          </div><!-- /.col-sm-6 -->
+
+          <div class="col-sm-6">
+            <h3><strong>Editor shortcuts</strong></h3>
+
+            <table class="table">
+              <tbody><tr>
+                <th>インデント:</th>
+                <td><span class="key key-longer">Tab</span></td>
+              </tr>
+              <tr>
+                <th>左インデント:</th>
+                <td><span class="key key-long">Shift</span> + <span class="key key-longer">Tab</span></td>
+              </tr>
+              <tr>
+                <th>保存:</th>
+                <td><span class="key cmd-key mac"></span> + <span class="key">S</span></td>
+              </tr>
+              <tr>
+                <th>行削除:</th>
+                <td><span class="key cmd-key mac"></span> + <span class="key">D</span></td>
+              </tr>
+            </tbody></table>
+          </div><!-- /.col-sm-6 -->
+
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><strong></strong></h3>
+          </div><!-- /.col-sm-6 -->
+
+          <div class="col-sm-6">
+            <h3><strong>コメントフォームショートカット</strong></h3>
+
+            <table class="table">
+              <tbody><tr>
+                <th>投稿:</th>
+                <td><span class="key cmd-key mac"></span> + <span class="key key-longer"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 34 21">
+  <g id="ba5f4106-f870-416b-bb0c-2580c9a76268">
+    <g id="1def15e1-5198-4ca2-9457-3b509e83053f">
+      <polygon points="31 0 31 9 5 9 11.8 1.8 10 0 0 10.5 10 21 11.8 19.2 5 12 34 12 34 0 31 0"></polygon>
+    </g>
+  </g>
+</svg>
+</span></td>
+              </tr>
+              <tr>
+                <th>行削除:</th>
+                <td><span class="key cmd-key mac"></span> + <span class="key">D</span></td>
+              </tr>
+            </tbody></table>
+          </div><!-- /.col-sm-6 -->
+
+        </div><!-- /.row -->
+
+      </div>
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+
+
+  <div id="presentation-layer" class="fullscreen-layer">
+    <div id="presentation-container"></div>
+  </div>
+
+  <div id="crowi-modals">
+      <div class="modal" id="renamePage">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+      <form role="form" id="renamePageForm" onsubmit="return false;">
+
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-title">ページを移動/名前変更する</div>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">現在のページ名</label><br>
+            <code>/user/kobayashi/setup</code>
+          </div>
+          <div class="form-group">
+            <label for="newPageName">移動先のページ名</label><br>
+            <div class="input-group">
+              <span class="input-group-addon">http://wiki.monolith.naist.jp</span>
+              
+              <div id="rename-page-name-input" class="page-name-input"><div><div class="search-typeahead"><div class="rbt clearfix open" tabindex="-1" style="position: relative;"><div class="rbt-input-hint-container" style="position: relative;"><input autocomplete="off" name="new_path" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" role="combobox" type="text" class="rbt-input-main form-control rbt-input " value="/user/kobayashi/setup"><div class="rbt-input-hint" style="left: 0px; pointer-events: none; position: absolute; top: 0px; display: inline-block;"><input aria-hidden="true" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.35); box-sizing: content-box; width: 3px; border-style: solid; border-width: 1px; font-size: 14px; line-height: 20px; margin: 0px; padding: 7px 12px;"><div style="height: 0px; left: 0px; overflow: scroll; position: absolute; top: 0px; visibility: hidden; white-space: pre; font-size: 14px; font-family: Lato, -apple-system, system-ui, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><div aria-atomic="true" aria-live="polite" class="sr-only rbt-sr-status" role="status">1 selection</div></div><span></span></div></div></div>
+              
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="checkbox checkbox-warning">
+            <input name="recursively" id="cbRenameRecursively" value="1" type="checkbox" checked="">
+            <label for="cbRenameRecursively">
+              再帰的に移動/名前変更
+              <p class="help-block mt-0"><code>/user/kobayashi/setup</code> 配下のページも移動/名前変更します</p>
+            </label>
+          </div>
+
+          <div class="checkbox checkbox-success">
+            <input name="create_redirect" id="cbRenameRedirect" value="1" type="checkbox">
+            <label for="cbRenameRedirect">
+              リダイレクトする
+              <p class="help-block mt-0"><code>/user/kobayashi/setup</code> にアクセスされた際に自動的に新しいページにジャンプします</p>
+            </label>
+          </div>
+
+          <div class="checkbox checkbox-inverse">
+            <input name="remain_metadata" id="cbRenameMetadata" value="1" type="checkbox">
+            <label for="cbRenameMetadata">
+              メタデータを更新しない
+              <p class="help-block mt-0">最終更新ユーザー、最終更新日を更新せず維持します</p>
+            </label>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex justify-content-between">
+            <p>
+  <span class="text-danger msg msg-notfound_or_forbidden">
+    <strong><i class="icon-fw icon-ban"></i>元のページが見つからないか、アクセス権がありません。</strong>
+  </span>
+  <span class="text-danger msg msg-user_not_admin">
+    <strong><i class="icon-fw icon-ban"></i>権限のあるユーザーのみが完全削除できます</strong>
+  </span>
+  <span class="text-danger msg msg-already_exists">
+    <strong><i class="icon-fw icon-ban"></i>新しいページが既に存在しています。</strong>
+    <small id="linkToNewPage"></small>
+  </span>
+  <span class="text-warning msg msg-outdated">
+    <strong><i class="icon-fw icon-bulb"></i> ページが他のユーザーによって更新されました。</strong>
+    <a href="javascript:location.reload();">
+      <i class="fa fa-angle-double-right"></i> 最新版を読み込む
+    </a>
+  </span>
+  <span class="text-danger msg msg-invalid_path">
+    <strong><i class="icon-fw icon-ban"></i> Invalid path</strong>
+  </span>
+  <span class="text-danger msg msg-unknown">
+    <strong><i class="icon-fw icon-ban"></i> Unknown error occured</strong>
+  </span>
+</p>
+
+            <div>
+              <input type="hidden" name="_csrf" value="anmPnTfO-Bymi3W623r462Mvr8_K-j3AFw8A">
+              <input type="hidden" name="path" value="/user/kobayashi/setup">
+              <input type="hidden" name="page_id" value="5e8579b2561e55005cfb33c1">
+              <input type="hidden" name="revision_id" value="5f4f5087a89ca700515f06d1">
+              <button type="submit" class="btn btn-primary">Rename</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="deletePage">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+      <form role="form" id="delete-page-form" onsubmit="return false;">
+
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-title">
+            
+            <i class="icon-fw icon-trash"></i> ページを削除する
+            
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">ページパス:</label><br>
+            <code>/user/kobayashi/setup</code>
+          </div>
+
+          <hr>
+
+          
+          
+          <div class="checkbox checkbox-danger">
+            <input name="completely" id="cbDeleteCompletely" value="1" type="checkbox">
+            <label for="cbDeleteCompletely" class="text-danger">
+              完全削除
+              <p class="help-block mt-0"> ゴミ箱を経由せず、完全に削除します</p>
+            </label>
+            
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex justify-content-between">
+            <p>
+  <span class="text-danger msg msg-notfound_or_forbidden">
+    <strong><i class="icon-fw icon-ban"></i>元のページが見つからないか、アクセス権がありません。</strong>
+  </span>
+  <span class="text-danger msg msg-user_not_admin">
+    <strong><i class="icon-fw icon-ban"></i>権限のあるユーザーのみが完全削除できます</strong>
+  </span>
+  <span class="text-danger msg msg-already_exists">
+    <strong><i class="icon-fw icon-ban"></i>新しいページが既に存在しています。</strong>
+    <small id="linkToNewPage"></small>
+  </span>
+  <span class="text-warning msg msg-outdated">
+    <strong><i class="icon-fw icon-bulb"></i> ページが他のユーザーによって更新されました。</strong>
+    <a href="javascript:location.reload();">
+      <i class="fa fa-angle-double-right"></i> 最新版を読み込む
+    </a>
+  </span>
+  <span class="text-danger msg msg-invalid_path">
+    <strong><i class="icon-fw icon-ban"></i> Invalid path</strong>
+  </span>
+  <span class="text-danger msg msg-unknown">
+    <strong><i class="icon-fw icon-ban"></i> Unknown error occured</strong>
+  </span>
+</p>
+
+            <div>
+              <input type="hidden" name="_csrf" value="anmPnTfO-Bymi3W623r462Mvr8_K-j3AFw8A">
+              <input type="hidden" name="path" value="/user/kobayashi/setup">
+              <input type="hidden" name="page_id" value="5e8579b2561e55005cfb33c1">
+              <input type="hidden" name="revision_id" value="5f4f5087a89ca700515f06d1">
+              
+                <button type="submit" class="m-l-10 btn btn-primary delete-button">
+                  <i class="icon-trash" aria-hidden="true"></i>
+                  削除
+                </button>
+              
+            </div>
+          </div>
+        </div><!-- /.modal-footer -->
+
+      </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+<div class="modal create-template" id="create-template">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-title">テンプレートページの作成/編集</div>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="mb-4"><code><small>/user/kobayashi/setup/</small></code><br>にテンプレートページを作成</label>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="panel panel-default panel-select-template">
+                <div class="panel-heading">同一階層テンプレート</div>
+                <div class="panel-body">
+                  <p class="text-center"><code>_template</code></p>
+                  <p class="help-block text-center"><small>テンプレートページが存在する階層にのみ適用されます</small></p>
+                </div>
+                <div class="panel-footer text-center">
+                  <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup/_template#edit" class="btn btn-sm btn-primary" id="template-button-children">
+                      編集
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel panel-default panel-select-template">
+                <div class="panel-heading">下位層テンプレート</div>
+                <div class="panel-body">
+                  <p class="text-center"><code>__template</code></p>
+                  <p class="help-block text-center"><small>テンプレートページが存在する下位層のすべてのページに適用されます</small></p>
+                </div>
+                <div class="panel-footer text-center">
+                  <a href="http://wiki.monolith.naist.jp/user/kobayashi/setup/__template#edit" class="btn btn-sm btn-primary" id="template-button-decendants">
+                      編集
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <div class="modal" id="duplicatePage">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+      <form role="form" id="duplicatePageForm" onsubmit="return false;">
+
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-title">ページを複製する</div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="">現在のページ名</label><br>
+              <code>/user/kobayashi/setup</code>
+            </div>
+            <div class="form-group">
+              <label for="duplicatePageName">複製後のページ名</label><br>
+              <div class="input-group">
+                <span class="input-group-addon">http://wiki.monolith.naist.jp</span>
+                
+                <div id="duplicate-page-name-input" class="page-name-input"><div><div class="search-typeahead"><div class="rbt clearfix open" tabindex="-1" style="position: relative;"><div class="rbt-input-hint-container" style="position: relative;"><input autocomplete="off" name="new_path" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" role="combobox" type="text" class="rbt-input-main form-control rbt-input " value="/user/kobayashi/setup"><div class="rbt-input-hint" style="left: 0px; pointer-events: none; position: absolute; top: 0px; display: inline-block;"><input aria-hidden="true" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.35); box-sizing: content-box; width: 3px; border-style: solid; border-width: 1px; font-size: 14px; line-height: 20px; margin: 0px; padding: 7px 12px;"><div style="height: 0px; left: 0px; overflow: scroll; position: absolute; top: 0px; visibility: hidden; white-space: pre; font-size: 14px; font-family: Lato, -apple-system, system-ui, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><div aria-atomic="true" aria-live="polite" class="sr-only rbt-sr-status" role="status">1 selection</div></div><span></span></div></div></div>
+                
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex justify-content-between">
+            <p>
+  <span class="text-danger msg msg-notfound_or_forbidden">
+    <strong><i class="icon-fw icon-ban"></i>元のページが見つからないか、アクセス権がありません。</strong>
+  </span>
+  <span class="text-danger msg msg-user_not_admin">
+    <strong><i class="icon-fw icon-ban"></i>権限のあるユーザーのみが完全削除できます</strong>
+  </span>
+  <span class="text-danger msg msg-already_exists">
+    <strong><i class="icon-fw icon-ban"></i>新しいページが既に存在しています。</strong>
+    <small id="linkToNewPage"></small>
+  </span>
+  <span class="text-warning msg msg-outdated">
+    <strong><i class="icon-fw icon-bulb"></i> ページが他のユーザーによって更新されました。</strong>
+    <a href="javascript:location.reload();">
+      <i class="fa fa-angle-double-right"></i> 最新版を読み込む
+    </a>
+  </span>
+  <span class="text-danger msg msg-invalid_path">
+    <strong><i class="icon-fw icon-ban"></i> Invalid path</strong>
+  </span>
+  <span class="text-danger msg msg-unknown">
+    <strong><i class="icon-fw icon-ban"></i> Unknown error occured</strong>
+  </span>
+</p>
+
+            <div>
+              <input type="hidden" name="_csrf" value="anmPnTfO-Bymi3W623r462Mvr8_K-j3AFw8A">
+              <input type="hidden" name="path" value="/user/kobayashi/setup">
+              <input type="hidden" name="page_id" value="5e8579b2561e55005cfb33c1">
+              <input type="hidden" name="revision_id" value="5f4f5087a89ca700515f06d1">
+              <button type="submit" class="btn btn-primary">Duplicate page</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<div class="modal" id="putBackPage">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <form role="form" id="revert-delete-page-form" onsubmit="return false;">
+
+        <div class="modal-header bg-info">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-title"><i class="icon-action-undo"></i> ページを元に戻す</div>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Put back page:</label><br>
+            <code>/user/kobayashi/setup</code>
+          </div>
+          <div class="checkbox checkbox-warning">
+            <input name="recursively" id="cbPutbackRecursively" value="1" type="checkbox" checked="">
+            <label for="cbPutbackRecursively">全ての子ページも元に戻す</label>
+            <p class="help-block"> <code>/user/kobayashi/setup</code> 配下のページも元に戻します
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex justify-content-between">
+            <p>
+  <span class="text-danger msg msg-notfound_or_forbidden">
+    <strong><i class="icon-fw icon-ban"></i>元のページが見つからないか、アクセス権がありません。</strong>
+  </span>
+  <span class="text-danger msg msg-user_not_admin">
+    <strong><i class="icon-fw icon-ban"></i>権限のあるユーザーのみが完全削除できます</strong>
+  </span>
+  <span class="text-danger msg msg-already_exists">
+    <strong><i class="icon-fw icon-ban"></i>新しいページが既に存在しています。</strong>
+    <small id="linkToNewPage"></small>
+  </span>
+  <span class="text-warning msg msg-outdated">
+    <strong><i class="icon-fw icon-bulb"></i> ページが他のユーザーによって更新されました。</strong>
+    <a href="javascript:location.reload();">
+      <i class="fa fa-angle-double-right"></i> 最新版を読み込む
+    </a>
+  </span>
+  <span class="text-danger msg msg-invalid_path">
+    <strong><i class="icon-fw icon-ban"></i> Invalid path</strong>
+  </span>
+  <span class="text-danger msg msg-unknown">
+    <strong><i class="icon-fw icon-ban"></i> Unknown error occured</strong>
+  </span>
+</p>
+
+            <div>
+              <input type="hidden" name="_csrf" value="anmPnTfO-Bymi3W623r462Mvr8_K-j3AFw8A">
+              <input type="hidden" name="path" value="/user/kobayashi/setup">
+              <input type="hidden" name="page_id" value="5e8579b2561e55005cfb33c1">
+              <button type="submit" class="btn btn-sm btn-info putBack-button">
+                <i class="icon-action-undo" aria-hidden="true"></i>
+                元に戻す
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.mod<div class="modal" id="deletePage">al-dialog -->
+</div>
+<!-- /.modal -->
+
+
+  </div>
+
+
+
+
+<script type="application/json" id="growi-context-hydrate">
+{"crowi":{"title":"ISC Lab Wiki","url":"http://wiki.monolith.naist.jp"},"upload":{"image":true,"file":true},"behaviorType":"growi","layoutType":"growi","themeType":"default","isEnabledLinebreaks":false,"isEnabledLinebreaksInComments":true,"pageBreakSeparator":2,"pageBreakCustomSeparator":null,"isEnabledXssPrevention":true,"isEnabledTimeline":true,"isAllReplyShown":false,"xssOption":2,"tagWhiteList":["-","a","abbr","b","bdi","bdo","blockquote","br","caption","cite","code","col","colgroup","data","dd","del","details","dfn","div","dl","dt","em","figcaption","figure","h1","h2","h3","h4","h5","h6","h7","h8","hr","i","iframe","img","ins","kbd","li","mark","ol","p","pre","q","rb","rp","rt","ruby","s","samp","small","span","strike","strong","sub","summary","sup","table","tbody","td","tfoot","th","thead","time","tr","tt","u","ul","var","wbr"],"attrWhiteList":["src","href","class","id","width","height","alt","title","style"],"highlightJsStyle":"github","highlightJsStyleBorder":false,"customizeTitle":null,"customizeHeader":null,"customizeCss":null,"isSavedStatesOfTabChanges":false,"isEnabledAttachTitleHeader":false,"customizeScript":null,"hasSlackConfig":false,"env":{"PLANTUML_URI":null,"BLOCKDIAG_URI":null,"HACKMD_URI":null,"MATHJAX":"1","NO_CDN":null},"recentCreatedLimit":10,"isEnabledStaleNotification":false,"isAclEnabled":true,"isSearchServiceReachable":true,"globalLang":"en-US"}
+</script>
+
+
+  <script type="application/json" id="growi-current-user">
+  {"isGravatarEnabled":false,"isEmailPublished":true,"lang":"ja","status":2,"admin":false,"_id":"5ec2578c9465af0052807d3a","createdAt":"2020-05-18T09:38:20.551Z","name":"佐伯雄飛","username":"yuhi-sa","email":"saiki.yuhi.sx4@is.naist.jp","__v":0,"lastLoginAt":"2020-11-04T02:16:52.668Z","password":"56e419c9cfa3d623ae5c44bdd0a22d9ab7b604b3bb62018637862fb756e85a65"}
+  </script>
+
+
+
+<script>
+  
+</script>
+
+
+
+
+
+</body></html>
