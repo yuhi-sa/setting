@@ -213,42 +213,7 @@ pyenv global anaconda*
 # conda init bash
 
 ```
-
-Save the following yaml as env.yaml (version will be changed, so please check here always!)
-
-```yaml
-name: team
-channels:
-  - conda-forge
-  - pytorch
-dependencies:
-  - python=3.7
-  - numpy
-  - scipy
-  - scikit-learn
-  - matplotlib
-  - seaborn
-  - pandas
-  - umap-learn
-  - hdbscan
-  - termcolor
-  - pyhamcrest
-  - ruamel.yaml
-  - pytorch
-  - torchvision
-  - cudatoolkit=10.
-  - tensorboard
-  - psutil
-  - pip
-  - pip:
-    - pygame
-    - "gym[box2d]"
-    - pybullet
-    - pyprind
-```
-
-After that, in the directory with the above yaml, 
-
+[env.yaml](https://github.com/yuhi-sa/setting/blob/main/env.yaml)をダウンロード
 ```bash
 conda env create -f env.yaml
 # if you use pyenv
@@ -281,43 +246,7 @@ pyenv global anaconda*
 # conda init bash
 
 ```
-
-Save the following yaml as env.yaml 
-```yaml
-name: team
-channels:
-  - conda-forge
-  - pytorch
-dependencies:
-  - python=3.7
-  - numpy
-  - scipy
-  - scikit-learn
-  - matplotlib
-  - seaborn
-  - pandas
-  - umap-learn
-  - hdbscan
-  - termcolor
-  - pyhamcrest
-  - ruamel.yaml
-  - pytorch
-  - torchvision
-  - tensorboard
-  - psutil
-  - opencv
-  - ffmpeg
-  - imagemagick
-  - pip
-  - pip:
-    - pygame
-    - "gym[box2d]"
-    - pybullet
-    - pyprind
-```
-
-After that, in the directory with the above yaml, 
-
+[env.yaml](https://github.com/yuhi-sa/setting/blob/main/env.yaml)をダウンロード
 ```bash
 conda env create -f env.yaml
 # if you use pyenv
