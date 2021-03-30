@@ -1,11 +1,34 @@
 # PCの設定
 ## 目次
+- リモートでの操作
 - Ubuntu 16.04 の設定
 - Macの設定
 - Pythonの設定
   - for ubuntu
   - for mac
 - latex on VScodeの設定
+
+## リモートでの操作
+1. sshでのアクセス(自分用)
+```bash
+# デスクトップ
+ssh yuhi-sa@ISC-PC.local
+# ジェットソン
+ssh yuhi-sa@daihen-jiro.local
+```
+2. 環境変数が使えない場合
+```bash
+source .bashrc
+```
+3. screenの使い方
+```bash
+# 新しいセッションを作る
+screen  
+# セッションを探す
+screen -ls
+# セッションを読み込む
+screen -r セッション番号
+```
 
 ## Ubuntu 16.04 の設定
 1. install ubuntu 16.04 with English edition
