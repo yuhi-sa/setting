@@ -9,12 +9,10 @@
 - latex on VScodeの設定
 
 ## リモートでの操作
-1. sshでのアクセス(自分用)
+1. sshでのアクセス
 ```bash
 # デスクトップ
-ssh yuhi-sa@ISC-PC.local
-# ジェットソン
-ssh yuhi-sa@daihen-jiro.local
+ssh PC名
 ```
 2. 環境変数が使えない場合
 ```bash
