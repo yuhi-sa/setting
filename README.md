@@ -281,94 +281,39 @@ pyenv global anaconda*/envs/team
 
 ## latex on VScodeの設定
 
-参照元
-- https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b 
-
-- https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile
-
 1. [Latex-Workshop](<https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>)をインストール
 2. settings.json(Windows: `ファイル > 基本設定 > 設定` or `Ctrl` + `,`， Mac: `Code > 基本設定 > 設定` or `⌘` + `,`)の`{ }`内に以下を追加([設定ファイルの変更方法](https://qiita.com/y-w/items/614843b259c04bb91495))
 
 ```json
-    "latex-workshop.latex.tools": [
+   "latex-workshop.latex.tools": [
         {
+            "name": "ptex2pdf",
             "command": "ptex2pdf",
             "args": [
                 "-l",
                 "-ot",
-                "-kanji=utf8 -synctex=1",
+                "-kanji=utf8 -synctex=1 -interaction=nonstopmode -halt-on-error -file-line-error",
                 "%DOCFILE%.tex"
-            ],
-            "name": "Step 1: ptex2pdf"
-        },
-        {
-            "command": "pbibtex",
-            "args": [
-                "%DOCFILE%",
-                "-kanji=utf8"
-            ],
-            "name": "Step 2: pbibtex"
-        },
-        {
-            "command": "ptex2pdf",
-            "args": [
-                "-l",
-                "-ot",
-                "-kanji=utf8 -synctex=1",
-                "%DOCFILE%.tex"
-            ],
-            "name": "Step 3: ptex2pdf"
-        },
-        {
-            "command": "ptex2pdf",
-            "args": [
-                "-l",
-                "-ot",
-                "-kanji=utf8 -synctex=1",
-                "%DOCFILE%.tex"
-            ],
-            "name": "Step 4: ptex2pdf"
+            ]
         }
     ],
     "latex-workshop.latex.recipes": [
         {
             "name": "toolchain",
             "tools": [
-                "Step 1: ptex2pdf",
-                "Step 2: pbibtex",
-                "Step 3: ptex2pdf",
-                "Step 4: ptex2pdf"
+                "ptex2pdf"
             ]
         }
     ],
     "latex-workshop.view.pdf.viewer": "tab",
-    "editor.renderControlCharacters": true
-```
-* もしbibファイルがないなら
-```json
-"latex-workshop.latex.tools": [
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": [
         {
-            "command": "ptex2pdf",
-            "args": [
-                "-l",
-                "-ot",
-                "-kanji=utf8 -synctex=1",
-                "%DOCFILE%.tex"
-            ]
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
         }
-],
-"latex-workshop.latex.recipes": [
-{
-    "name": "toolchain",
-    "tools": [
-        "Step 1: ptex2pdf"
-    ]
-}],
-"latex-workshop.view.pdf.viewer": "tab",
-"editor.renderControlCharacters": true
+    ],
 ```
-
-1. ファイルを保存または`F1`キーを押して`Build Latex Project`を入力，実行するとコンパイルされる．
-2. `F1`キーの後， `View PDF File in new tab`でPDFを見れる．
-3. エラーが出た場合は `表示-> 統合ターミナル`で下に端末が出るのでその中の`出力`を確認
 
