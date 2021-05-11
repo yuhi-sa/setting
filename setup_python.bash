@@ -49,4 +49,41 @@ echo "install Anaconda? [y/n]: "
         pip install -r requirements.txt
     fi
 
+# 実験環境インストール
+echo "Install odrl and gym_collection and torch_collection? [y/n]: "
+    read is_Inst
+
+    if [ ${is_Inst} = "y" ];then
+        cd ..
+
+        git clone http://git.monolith.naist.jp/kobayashi/torch_collection.git
+        git clone http://git.monolith.naist.jp/kobayashi/gym_collection.git
+        git clone https://github.com/yuhi-sa/odrl.git
+
+        cd setting
+    fi
+
+# 実験環境セットアップ
+echo "Set up odrl and gym_collection and torch_collection? [y/n]: "
+    read is_set
+
+    if [ ${is_set} = "y" ];then
+        cd ..
+
+        cd torch_collection
+        pip install -e .
+        cd ..
+
+        cd gym_collection
+        pip install -e .
+        cd ..
+
+        cd odrl
+        pip install -e .
+        cd ..
+
+        cd setting
+
+    fi
+
 echo "finish"
