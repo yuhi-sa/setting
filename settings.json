@@ -1,0 +1,73 @@
+{
+    "terminal.integrated.inheritEnv": false,
+    "editor.fontSize": 14,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Visual Studio Light",
+
+
+    "latex-workshop.latex.tools": [
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
+            ],
+            "name": "Step 1: ptex2pdf"
+        },
+        {
+            "command": "pbibtex",
+            "args": [
+                "%DOCFILE%",
+                "-kanji=utf8"
+            ],
+            "name": "Step 2: pbibtex"
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
+            ],
+            "name": "Step 3: ptex2pdf"
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
+            ],
+            "name": "Step 4: ptex2pdf"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "ptex2pdf+pbibtex",
+            "tools": [
+                "Step 1: ptex2pdf",
+                "Step 2: pbibtex",
+                "Step 3: ptex2pdf",
+                "Step 4: ptex2pdf"
+            ]
+        }
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.languageServer": "Pylance",
+    "latex-workshop.view.pdf.viewer": "tab",
+
+}
