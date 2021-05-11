@@ -28,7 +28,7 @@ echo "install pyenv? [y/n]: "
                 # パスを通す
                 echo 'PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
                 echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-                echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+                echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
                 source ~/.bashrc
             fi
         fi
