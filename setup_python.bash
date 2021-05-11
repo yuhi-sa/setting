@@ -42,7 +42,7 @@ echo "install Anaconda? [y/n]: "
         echo "start to install Anaconda"
         pyenv install anaconda3-5.3.1
         pyenv global anaconda3-5.3.1
-        conda create -name team python=3.8 anaconda
+        conda create --name team python=3.8
         pyenv global anaconda3-5.3.1/envs/team
 
         # 足りないパッケージをインストール
