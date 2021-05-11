@@ -27,7 +27,6 @@ six==1.16.0
 slackweb==1.0.5
 threadpoolctl==2.1.0
 torch==1.8.1
-torch_collection.git@6d9edc6b93dadf3aed305af86e1ca27698552a26#egg=torchcollection
 typing-extensions==3.10.0.0
 umap-learn==0.5.1
 urllib3==1.26.4
