@@ -21,7 +21,7 @@ echo "install pyenv? [y/n]: "
                 brew install pyenv
                 echo 'PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
                 echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
-                echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+                echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
                 source ~/.zshrc
             elif [ ${machine} = "linux" ]; then
                 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
